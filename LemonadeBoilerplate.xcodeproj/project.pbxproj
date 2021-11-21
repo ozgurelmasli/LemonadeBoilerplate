@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDB274A4C1600784A40 /* AppDelegate.swift */; };
+		0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDD274A4C1600784A40 /* SceneDelegate.swift */; };
+		0432ECE0274A4C1600784A40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDF274A4C1600784A40 /* ViewController.swift */; };
+		0432ECE3274A4C1600784A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE1274A4C1600784A40 /* Main.storyboard */; };
+		0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE4274A4C1900784A40 /* Assets.xcassets */; };
+		0432ECE8274A4C1900784A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE6274A4C1900784A40 /* LaunchScreen.storyboard */; };
+		0432ECF3274A4C1900784A40 /* LemonadeBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECF2274A4C1900784A40 /* LemonadeBoilerplateTests.swift */; };
+		0432ECFD274A4C1900784A40 /* LemonadeBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECFC274A4C1900784A40 /* LemonadeBoilerplateUITests.swift */; };
+		0432ECFF274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECFE274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0432ECEF274A4C1900784A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0432ECD0274A4C1600784A40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0432ECD7274A4C1600784A40;
+			remoteInfo = LemonadeBoilerplate;
+		};
+		0432ECF9274A4C1900784A40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0432ECD0274A4C1600784A40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0432ECD7274A4C1600784A40;
+			remoteInfo = LemonadeBoilerplate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0432ECDB274A4C1600784A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0432ECDD274A4C1600784A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0432ECDF274A4C1600784A40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0432ECE2274A4C1600784A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0432ECE4274A4C1900784A40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0432ECE7274A4C1900784A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0432ECE9274A4C1900784A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0432ECEE274A4C1900784A40 /* LemonadeBoilerplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeBoilerplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0432ECF2274A4C1900784A40 /* LemonadeBoilerplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeBoilerplateTests.swift; sourceTree = "<group>"; };
+		0432ECF8274A4C1900784A40 /* LemonadeBoilerplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonadeBoilerplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0432ECFC274A4C1900784A40 /* LemonadeBoilerplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeBoilerplateUITests.swift; sourceTree = "<group>"; };
+		0432ECFE274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonadeBoilerplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0432ECD5274A4C1600784A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECEB274A4C1900784A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECF5274A4C1900784A40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0432ECCF274A4C1600784A40 = {
+			isa = PBXGroup;
+			children = (
+				0432ECDA274A4C1600784A40 /* LemonadeBoilerplate */,
+				0432ECF1274A4C1900784A40 /* LemonadeBoilerplateTests */,
+				0432ECFB274A4C1900784A40 /* LemonadeBoilerplateUITests */,
+				0432ECD9274A4C1600784A40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0432ECD9274A4C1600784A40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */,
+				0432ECEE274A4C1900784A40 /* LemonadeBoilerplateTests.xctest */,
+				0432ECF8274A4C1900784A40 /* LemonadeBoilerplateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0432ECDA274A4C1600784A40 /* LemonadeBoilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				0432ECDB274A4C1600784A40 /* AppDelegate.swift */,
+				0432ECDD274A4C1600784A40 /* SceneDelegate.swift */,
+				0432ECDF274A4C1600784A40 /* ViewController.swift */,
+				0432ECE1274A4C1600784A40 /* Main.storyboard */,
+				0432ECE4274A4C1900784A40 /* Assets.xcassets */,
+				0432ECE6274A4C1900784A40 /* LaunchScreen.storyboard */,
+				0432ECE9274A4C1900784A40 /* Info.plist */,
+			);
+			path = LemonadeBoilerplate;
+			sourceTree = "<group>";
+		};
+		0432ECF1274A4C1900784A40 /* LemonadeBoilerplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				0432ECF2274A4C1900784A40 /* LemonadeBoilerplateTests.swift */,
+			);
+			path = LemonadeBoilerplateTests;
+			sourceTree = "<group>";
+		};
+		0432ECFB274A4C1900784A40 /* LemonadeBoilerplateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0432ECFC274A4C1900784A40 /* LemonadeBoilerplateUITests.swift */,
+				0432ECFE274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift */,
+			);
+			path = LemonadeBoilerplateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0432ECD7274A4C1600784A40 /* LemonadeBoilerplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0432ED02274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplate" */;
+			buildPhases = (
+				0432ECD4274A4C1600784A40 /* Sources */,
+				0432ECD5274A4C1600784A40 /* Frameworks */,
+				0432ECD6274A4C1600784A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LemonadeBoilerplate;
+			productName = LemonadeBoilerplate;
+			productReference = 0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0432ECED274A4C1900784A40 /* LemonadeBoilerplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0432ED05274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateTests" */;
+			buildPhases = (
+				0432ECEA274A4C1900784A40 /* Sources */,
+				0432ECEB274A4C1900784A40 /* Frameworks */,
+				0432ECEC274A4C1900784A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0432ECF0274A4C1900784A40 /* PBXTargetDependency */,
+			);
+			name = LemonadeBoilerplateTests;
+			productName = LemonadeBoilerplateTests;
+			productReference = 0432ECEE274A4C1900784A40 /* LemonadeBoilerplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0432ECF7274A4C1900784A40 /* LemonadeBoilerplateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0432ED08274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateUITests" */;
+			buildPhases = (
+				0432ECF4274A4C1900784A40 /* Sources */,
+				0432ECF5274A4C1900784A40 /* Frameworks */,
+				0432ECF6274A4C1900784A40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0432ECFA274A4C1900784A40 /* PBXTargetDependency */,
+			);
+			name = LemonadeBoilerplateUITests;
+			productName = LemonadeBoilerplateUITests;
+			productReference = 0432ECF8274A4C1900784A40 /* LemonadeBoilerplateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0432ECD0274A4C1600784A40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					0432ECD7274A4C1600784A40 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					0432ECED274A4C1900784A40 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0432ECD7274A4C1600784A40;
+					};
+					0432ECF7274A4C1900784A40 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 0432ECD7274A4C1600784A40;
+					};
+				};
+			};
+			buildConfigurationList = 0432ECD3274A4C1600784A40 /* Build configuration list for PBXProject "LemonadeBoilerplate" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0432ECCF274A4C1600784A40;
+			productRefGroup = 0432ECD9274A4C1600784A40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0432ECD7274A4C1600784A40 /* LemonadeBoilerplate */,
+				0432ECED274A4C1900784A40 /* LemonadeBoilerplateTests */,
+				0432ECF7274A4C1900784A40 /* LemonadeBoilerplateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0432ECD6274A4C1600784A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0432ECE8274A4C1900784A40 /* LaunchScreen.storyboard in Resources */,
+				0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */,
+				0432ECE3274A4C1600784A40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECEC274A4C1900784A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECF6274A4C1900784A40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0432ECD4274A4C1600784A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0432ECE0274A4C1600784A40 /* ViewController.swift in Sources */,
+				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
+				0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECEA274A4C1900784A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0432ECF3274A4C1900784A40 /* LemonadeBoilerplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0432ECF4274A4C1900784A40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0432ECFD274A4C1900784A40 /* LemonadeBoilerplateUITests.swift in Sources */,
+				0432ECFF274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0432ECF0274A4C1900784A40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0432ECD7274A4C1600784A40 /* LemonadeBoilerplate */;
+			targetProxy = 0432ECEF274A4C1900784A40 /* PBXContainerItemProxy */;
+		};
+		0432ECFA274A4C1900784A40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0432ECD7274A4C1600784A40 /* LemonadeBoilerplate */;
+			targetProxy = 0432ECF9274A4C1900784A40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0432ECE1274A4C1600784A40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0432ECE2274A4C1600784A40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0432ECE6274A4C1900784A40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0432ECE7274A4C1900784A40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0432ED00274A4C1900784A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0432ED01274A4C1900784A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0432ED03274A4C1900784A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LemonadeBoilerplate/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0432ED04274A4C1900784A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LemonadeBoilerplate/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0432ED06274A4C1900784A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LemonadeBoilerplate.app/LemonadeBoilerplate";
+			};
+			name = Debug;
+		};
+		0432ED07274A4C1900784A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LemonadeBoilerplate.app/LemonadeBoilerplate";
+			};
+			name = Release;
+		};
+		0432ED09274A4C1900784A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemonadeBoilerplate;
+			};
+			name = Debug;
+		};
+		0432ED0A274A4C1900784A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W92Z84454P;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgurelmasli.LemonadeBoilerplateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LemonadeBoilerplate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0432ECD3274A4C1600784A40 /* Build configuration list for PBXProject "LemonadeBoilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0432ED00274A4C1900784A40 /* Debug */,
+				0432ED01274A4C1900784A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0432ED02274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0432ED03274A4C1900784A40 /* Debug */,
+				0432ED04274A4C1900784A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0432ED05274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0432ED06274A4C1900784A40 /* Debug */,
+				0432ED07274A4C1900784A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0432ED08274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0432ED09274A4C1900784A40 /* Debug */,
+				0432ED0A274A4C1900784A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0432ECD0274A4C1600784A40 /* Project object */;
+}
