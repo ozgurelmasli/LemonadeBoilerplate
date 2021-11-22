@@ -14,9 +14,9 @@ internal class NetworkConnection {
         return referance!
     }
     
-    var baseURL : RequestURLBuilder = .init(host: .API, domain: "")
-    var authURL : RequestURLBuilder = .init(host: .AUTH, domain: "")
-    var staticURL : RequestURLBuilder = .init(host: .STATIC, domain: "")
+    var baseURL                      : RequestURLBuilder = .init(host: .API, domain: "DOMAIN-NAME")
+    var authURL                      : RequestURLBuilder = .init(host: .AUTH, domain: "DOMAIN-NAME")
+    var staticURL                    : RequestURLBuilder = .init(host: .STATIC, domain: "DOMAIN-NAME")
     
     
     var timeOut                      : TimeInterval = 30
