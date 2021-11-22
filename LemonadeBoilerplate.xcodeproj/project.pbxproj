@@ -42,6 +42,8 @@
 		0432ED5A274BCF5400784A40 /* Response+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED59274BCF5400784A40 /* Response+Model.swift */; };
 		0432ED5C274BD03400784A40 /* Example+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED5B274BD03400784A40 /* Example+Model.swift */; };
 		0433E8E4274BD3A500DAD1BB /* UserDefaultTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8E3274BD3A500DAD1BB /* UserDefaultTag.swift */; };
+		0433E8E6274BD41100DAD1BB /* NetworkErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8E5274BD41100DAD1BB /* NetworkErrorViewController.swift */; };
+		0433E8E9274BD45800DAD1BB /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8E8274BD45800DAD1BB /* Font+Extensions.swift */; };
 		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
 		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
@@ -105,6 +107,8 @@
 		0432ED59274BCF5400784A40 /* Response+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Model.swift"; sourceTree = "<group>"; };
 		0432ED5B274BD03400784A40 /* Example+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Model.swift"; sourceTree = "<group>"; };
 		0433E8E3274BD3A500DAD1BB /* UserDefaultTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultTag.swift; sourceTree = "<group>"; };
+		0433E8E5274BD41100DAD1BB /* NetworkErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorViewController.swift; sourceTree = "<group>"; };
+		0433E8E8274BD45800DAD1BB /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 		0432ED0C274A4E4C00784A40 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0433E8E7274BD44900DAD1BB /* UI */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				0432ED51274BBFEE00784A40 /* ExampleViewController.swift */,
+				0433E8E5274BD41100DAD1BB /* NetworkErrorViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -377,6 +383,14 @@
 				0432ED4C274BA17B00784A40 /* ViewModelErrorAction.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0433E8E7274BD44900DAD1BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0433E8E8274BD45800DAD1BB /* Font+Extensions.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		FA822091DF06A726BADE105F /* Frameworks */ = {
@@ -629,6 +643,7 @@
 			files = (
 				0432ED31274A546800784A40 /* Request+Error.swift in Sources */,
 				0432ED4D274BA17B00784A40 /* ViewModelErrorAction.swift in Sources */,
+				0433E8E9274BD45800DAD1BB /* Font+Extensions.swift in Sources */,
 				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
 				0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */,
 				0432ED43274A56BA00784A40 /* ExampleService.swift in Sources */,
@@ -650,6 +665,7 @@
 				0432ED4B274BA14600784A40 /* ViewModel.swift in Sources */,
 				0432ED3B274A556300784A40 /* Interceptor.swift in Sources */,
 				0432ED5C274BD03400784A40 /* Example+Model.swift in Sources */,
+				0433E8E6274BD41100DAD1BB /* NetworkErrorViewController.swift in Sources */,
 				0432ED52274BBFEE00784A40 /* ExampleViewController.swift in Sources */,
 				0432ED36274A54E200784A40 /* Interceptor+Credential+Builder.swift in Sources */,
 				0432ED56274BC39C00784A40 /* ExampleViewModel.swift in Sources */,

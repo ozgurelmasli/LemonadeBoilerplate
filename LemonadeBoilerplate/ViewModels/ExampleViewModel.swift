@@ -6,4 +6,5 @@
 //
 
 
-class ExampleViewModel : BaseViewModel<ExampleCoordinator> { }
+class ExampleViewModel : BaseViewModel<ExampleCoordinator> {
+}

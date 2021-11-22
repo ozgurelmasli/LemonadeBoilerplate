@@ -7,17 +7,20 @@
 
 import Foundation
 
-public protocol ViewModel : AnyObject {
+protocol ViewModel : AnyObject {
     var coordinator : BaseCoordinator? { get set }
+    func tryRequest()
 }
 
-public class BaseViewModel<C : BaseCoordinator>: ViewModel {
+class BaseViewModel<C : BaseCoordinator>: ViewModel {
+    func tryRequest() { }
+    
     public var coordinator: BaseCoordinator?
     
     public var safeCoordinator : C {
         return (coordinator as! C)
     }
-
+    
     init(coordinator : C) {
         self.coordinator = coordinator
     }

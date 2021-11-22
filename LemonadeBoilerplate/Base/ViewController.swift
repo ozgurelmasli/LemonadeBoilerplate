@@ -11,11 +11,13 @@ protocol ViewController : AnyObject {
     var viewModel : ViewModel { get set }
     
     func alertCancelAction()
+    func alertDoneAction()
 }
 
 class BaseViewController<VM : ViewModel , V : UIView> : UIViewController, ViewController {
     /// Override this function if you want to give new operation when cancel button tapped in error state
     func alertCancelAction() { }
+    func alertDoneAction() { }
     
     var viewModel: ViewModel
     var safeViewModel : VM { return (viewModel as! VM) }
@@ -40,17 +42,16 @@ extension BaseViewController : ViewModelErrorAction {
     func didErrorOccurred(_ state: UIError) {
         switch state {
         case .NETWORK_ERROR:
-            break
             /// Sending NetworkError VC
-          // let errorVC = NetworkErrorVC()
-          // errorVC.modalPresentationStyle = .fullScreen
-          // (errorVC.view as? NetworkErrorView)?.networkViewDelegate = self
-          // present(errorVC , animated: true)
+            let errorVC = NetworkErrorVC()
+            errorVC.modalPresentationStyle = .fullScreen
+            (errorVC.view as? NetworkErrorView)?.networkViewDelegate = self
+            present(errorVC , animated: true)
         case .REQUEST_ERROR:
             /// Create try request or cancel directly
             let alert = UIAlertController(title: "Alert", message: "Request has been failed. Try Again.", preferredStyle: .alert)
             let tryAgainAction = UIAlertAction(title: "Try Again", style: .default) { [weak self] _ in
-             //   self?.viewModel.tryRequest()
+                self?.viewModel.tryRequest()
             }
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak self] _ in
                 self?.alertCancelAction()
@@ -61,11 +62,24 @@ extension BaseViewController : ViewModelErrorAction {
         case .ALERT(let message):
             /// Create normal alert with custom message and cancel action
             let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
-            let action = UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak self] _ in
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak self] _ in
                 self?.alertCancelAction()
             })
-            alert.addAction(action)
+            let doneAction = UIAlertAction(title: "Done", style: .default) { [weak self] _ in
+                self?.alertDoneAction()
+            }
+            alert.addAction(cancelAction)
+            alert.addAction(doneAction)
             present(alert , animated: true)
         }
+    }
+}
+
+
+//MARK: NetworkErrorAction Function
+extension BaseViewController : NetworkErrorActionDelegate {
+    func didTryAgainButtonTapped() {
+        self.dismiss(animated: true, completion: nil)
+        viewModel.tryRequest()
     }
 }
