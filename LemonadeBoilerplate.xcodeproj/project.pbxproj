@@ -19,6 +19,18 @@
 		0432ED21274A52BE00784A40 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED20274A52BE00784A40 /* KeychainStore.swift */; };
 		0432ED23274A52C700784A40 /* KeychainTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED22274A52C700784A40 /* KeychainTag.swift */; };
 		0432ED25274A52CF00784A40 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED24274A52CF00784A40 /* KeychainError.swift */; };
+		0432ED28274A53BB00784A40 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED27274A53BB00784A40 /* NetworkConnection.swift */; };
+		0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED2A274A53F700784A40 /* Request+Builder.swift */; };
+		0432ED2D274A540900784A40 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED2C274A540900784A40 /* Request.swift */; };
+		0432ED2F274A542900784A40 /* Request+Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED2E274A542900784A40 /* Request+Credentials.swift */; };
+		0432ED31274A546800784A40 /* Request+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED30274A546800784A40 /* Request+Error.swift */; };
+		0432ED34274A54B800784A40 /* Interceptor+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED33274A54B800784A40 /* Interceptor+Base.swift */; };
+		0432ED36274A54E200784A40 /* Interceptor+Credential+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED35274A54E200784A40 /* Interceptor+Credential+Builder.swift */; };
+		0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED38274A554700784A40 /* Interceptor+Error.swift */; };
+		0432ED3B274A556300784A40 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED3A274A556300784A40 /* Interceptor.swift */; };
+		0432ED3D274A55E900784A40 /* Interceptor+Response+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED3C274A55E900784A40 /* Interceptor+Response+Model.swift */; };
+		0432ED40274A566800784A40 /* Reqıest+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED3F274A566800784A40 /* Reqıest+Provider.swift */; };
+		0432ED43274A56BA00784A40 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ED42274A56BA00784A40 /* ExampleService.swift */; };
 		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
 		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
@@ -59,6 +71,18 @@
 		0432ED20274A52BE00784A40 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
 		0432ED22274A52C700784A40 /* KeychainTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTag.swift; sourceTree = "<group>"; };
 		0432ED24274A52CF00784A40 /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		0432ED27274A53BB00784A40 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		0432ED2A274A53F700784A40 /* Request+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Builder.swift"; sourceTree = "<group>"; };
+		0432ED2C274A540900784A40 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		0432ED2E274A542900784A40 /* Request+Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Credentials.swift"; sourceTree = "<group>"; };
+		0432ED30274A546800784A40 /* Request+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Error.swift"; sourceTree = "<group>"; };
+		0432ED33274A54B800784A40 /* Interceptor+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interceptor+Base.swift"; sourceTree = "<group>"; };
+		0432ED35274A54E200784A40 /* Interceptor+Credential+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interceptor+Credential+Builder.swift"; sourceTree = "<group>"; };
+		0432ED38274A554700784A40 /* Interceptor+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interceptor+Error.swift"; sourceTree = "<group>"; };
+		0432ED3A274A556300784A40 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		0432ED3C274A55E900784A40 /* Interceptor+Response+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interceptor+Response+Model.swift"; sourceTree = "<group>"; };
+		0432ED3F274A566800784A40 /* Reqıest+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reqıest+Provider.swift"; sourceTree = "<group>"; };
+		0432ED42274A56BA00784A40 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +159,7 @@
 		0432ECDA274A4C1600784A40 /* LemonadeBoilerplate */ = {
 			isa = PBXGroup;
 			children = (
+				0432ED26274A537900784A40 /* Network */,
 				0432ED19274A524D00784A40 /* Util */,
 				0432ED13274A4F5900784A40 /* Base */,
 				0432ED12274A4F2600784A40 /* ViewControllers */,
@@ -260,6 +285,57 @@
 				0432ED24274A52CF00784A40 /* KeychainError.swift */,
 			);
 			path = Keychain;
+			sourceTree = "<group>";
+		};
+		0432ED26274A537900784A40 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0432ED41274A56A800784A40 /* Services */,
+				0432ED3E274A565400784A40 /* Provider */,
+				0432ED32274A54A800784A40 /* Interceptor */,
+				0432ED29274A53E600784A40 /* Request */,
+				0432ED27274A53BB00784A40 /* NetworkConnection.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0432ED29274A53E600784A40 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0432ED2A274A53F700784A40 /* Request+Builder.swift */,
+				0432ED2C274A540900784A40 /* Request.swift */,
+				0432ED2E274A542900784A40 /* Request+Credentials.swift */,
+				0432ED30274A546800784A40 /* Request+Error.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0432ED32274A54A800784A40 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				0432ED33274A54B800784A40 /* Interceptor+Base.swift */,
+				0432ED35274A54E200784A40 /* Interceptor+Credential+Builder.swift */,
+				0432ED38274A554700784A40 /* Interceptor+Error.swift */,
+				0432ED3A274A556300784A40 /* Interceptor.swift */,
+				0432ED3C274A55E900784A40 /* Interceptor+Response+Model.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		0432ED3E274A565400784A40 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				0432ED3F274A566800784A40 /* Reqıest+Provider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		0432ED41274A56A800784A40 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0432ED42274A56BA00784A40 /* ExampleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FA822091DF06A726BADE105F /* Frameworks */ = {
@@ -510,11 +586,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0432ED31274A546800784A40 /* Request+Error.swift in Sources */,
 				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
+				0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */,
+				0432ED43274A56BA00784A40 /* ExampleService.swift in Sources */,
 				0432ED25274A52CF00784A40 /* KeychainError.swift in Sources */,
+				0432ED40274A566800784A40 /* Reqıest+Provider.swift in Sources */,
 				0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */,
 				0432ED1B274A527400784A40 /* UserDefaults.swift in Sources */,
+				0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */,
+				0432ED28274A53BB00784A40 /* NetworkConnection.swift in Sources */,
+				0432ED2F274A542900784A40 /* Request+Credentials.swift in Sources */,
+				0432ED34274A54B800784A40 /* Interceptor+Base.swift in Sources */,
 				0432ED1D274A528F00784A40 /* UserDefaultsTag.swift in Sources */,
+				0432ED3B274A556300784A40 /* Interceptor.swift in Sources */,
+				0432ED36274A54E200784A40 /* Interceptor+Credential+Builder.swift in Sources */,
+				0432ED2D274A540900784A40 /* Request.swift in Sources */,
+				0432ED3D274A55E900784A40 /* Interceptor+Response+Model.swift in Sources */,
 				0432ED23274A52C700784A40 /* KeychainTag.swift in Sources */,
 				0432ED21274A52BE00784A40 /* KeychainStore.swift in Sources */,
 			);
