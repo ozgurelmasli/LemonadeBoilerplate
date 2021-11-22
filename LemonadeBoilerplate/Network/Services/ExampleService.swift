@@ -5,7 +5,9 @@
 //  Created by Mac on 21.11.2021.
 //
 
-enum ExampleServic : ServiceRequest {
+enum ExampleService : ServiceRequest {
+    case exampleRequest
+    
     var credential:RequestCredentials {
         return .init(method: .get
                      , header: nil
