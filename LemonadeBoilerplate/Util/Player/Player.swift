@@ -27,22 +27,32 @@ class CustomPlayer : NSObject {
     
     weak var customPlayerActionDelegate : CustomPlayerDelegate?
     
+    var volume : Float = 0.5 {
+        didSet {
+            self.player?.volume = volume
+        }
+    }
+    
+    var isLoopEnabled : Bool = false
+    
     private var currentPlayingItemIndex : Int = 0
     private var assetURLs : [String] = []
     
     private var assets : AVURLAsset?
-    private var player : AVPlayer?
+    private var player : AVQueuePlayer?
     private var playerItem : AVPlayerItem?
+    private var playerLooper : AVPlayerLooper?
     private var remotePlayer : CustomRemotePlayer?
-
     private var timeObserver : Any?
     
     init( _ url : String) {
+        super.init()
         assetURLs = [url]
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
     }
     init( _ urls : [String]){
+        super.init()
         assetURLs = urls
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
@@ -66,8 +76,11 @@ extension CustomPlayer {
         guard let url =  playerURL else { return }
         assets     = AVURLAsset(url: url, options: assetOptions)
         playerItem = AVPlayerItem(asset: assets!)
-        player     = AVPlayer(playerItem: playerItem!)
+        player     = AVQueuePlayer(playerItem: playerItem!)
         player?.automaticallyWaitsToMinimizeStalling = false
+        if isLoopEnabled {
+            playerLooper = AVPlayerLooper(player: player!, templateItem: playerItem!)
+        }
         assets?.loadValuesAsynchronously(forKeys: ["playable"]
                                          , completionHandler: { [weak self] in
             var error : NSError? = nil
@@ -78,13 +91,13 @@ extension CustomPlayer {
                 self?.remotePlayer?.changePlayerData(self?.player?.currentTime().seconds ?? 0.0
                                                      , self?.playerItem?.asset.duration.seconds ?? 0.0
                                                      , self?.player?.rate ?? 0.0)
+                self?.customPlayerActionDelegate?.didPlayerStateChanged(status)
                 self?.timeObserver =  self?.player?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: .main, using: { cmtime in
                     let time : Float64 = CMTimeGetSeconds(cmtime);
                     let second = Int(time) % 60
                     let minute = Int(time) / 60
                     self?.customPlayerActionDelegate?.didDurationChanged(second, minute)
                 })
-                
             default:
                 self?.customPlayerActionDelegate?.didPlayerStateChanged(status)
             }
@@ -151,8 +164,6 @@ extension CustomPlayer {
         player?.seek(to: slideValue)
         play()
     }
-    
-    
     func clear(){
         player?.removeTimeObserver(self.timeObserver as Any)
         playerItem?.cancelPendingSeeks()
@@ -188,6 +199,4 @@ extension CustomPlayer : CustomRemotePlayerAction {
     func slideCommand(_ value: CGFloat) {
         slide(action: .slide(value: value))
     }
-    
-    
 }

@@ -70,37 +70,37 @@ class CustomRemotePlayer {
         MPRemoteCommandCenter.shared().changePlaybackPositionCommand.removeTarget(self, action: nil)
     }
     private  func setupRemoteTransportControls() {
-            // Get the shared MPRemoteCommandCenter
-            let commandCenter = MPRemoteCommandCenter.shared()
-            
-            // Add handler for Play Command
-            commandCenter.playCommand.addTarget { [weak self] event in
-                guard let self = self else { return .commandFailed }
-                self.customRemotePlayerActionDelegate?.playCommand()
-                return .success
-            }
-            
-            // Add handler for Pause Command
-            commandCenter.pauseCommand.addTarget { [weak self] event in
-                guard let self = self else { return .commandFailed }
-                self.customRemotePlayerActionDelegate?.pauseCommand()
-                return .success
-            }
-            commandCenter.nextTrackCommand.addTarget{ [weak self] event in
-                guard let self = self else { return .commandFailed }
-                self.customRemotePlayerActionDelegate?.nextTrackCommand()
-                return .success
-            }
-            commandCenter.previousTrackCommand.addTarget{ [weak self] event in
-                guard let self = self else { return .commandFailed }
-                self.customRemotePlayerActionDelegate?.previousTrackCommand()
-                return .success
-            }
-            commandCenter.changePlaybackPositionCommand.addTarget { [weak self] event in
-                guard let self = self else { return .commandFailed }
-                self.customRemotePlayerActionDelegate?.slideCommand(CGFloat((event as? MPChangePlaybackPositionCommandEvent)?.positionTime ?? 0.0))
-                return .success
-            }
+        // Get the shared MPRemoteCommandCenter
+        let commandCenter = MPRemoteCommandCenter.shared()
+        
+        // Add handler for Play Command
+        commandCenter.playCommand.addTarget { [weak self] event in
+            guard let self = self else { return .commandFailed }
+            self.customRemotePlayerActionDelegate?.playCommand()
+            return .success
         }
+        
+        // Add handler for Pause Command
+        commandCenter.pauseCommand.addTarget { [weak self] event in
+            guard let self = self else { return .commandFailed }
+            self.customRemotePlayerActionDelegate?.pauseCommand()
+            return .success
+        }
+        commandCenter.nextTrackCommand.addTarget{ [weak self] event in
+            guard let self = self else { return .commandFailed }
+            self.customRemotePlayerActionDelegate?.nextTrackCommand()
+            return .success
+        }
+        commandCenter.previousTrackCommand.addTarget{ [weak self] event in
+            guard let self = self else { return .commandFailed }
+            self.customRemotePlayerActionDelegate?.previousTrackCommand()
+            return .success
+        }
+        commandCenter.changePlaybackPositionCommand.addTarget { [weak self] event in
+            guard let self = self else { return .commandFailed }
+            self.customRemotePlayerActionDelegate?.slideCommand(CGFloat((event as? MPChangePlaybackPositionCommandEvent)?.positionTime ?? 0.0))
+            return .success
+        }
+    }
 }
 

@@ -13,4 +13,8 @@ final class AppCoordinator : BaseCoordinator {
     public init(scene : UIWindowScene) {
         self.window = .init(windowScene: scene)
     }
+    override func start() {
+        let coordinator : ExampleCoordinator = .init()
+        start(coordinator: coordinator)
+    }
 }
