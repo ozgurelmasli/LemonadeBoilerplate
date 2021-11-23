@@ -52,6 +52,9 @@
 		0433E8FA274C1F7200DAD1BB /* StaticFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8F9274C1F7200DAD1BB /* StaticFile.swift */; };
 		0433E8FD274C211A00DAD1BB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8FC274C211A00DAD1BB /* Player.swift */; };
 		0433E8FF274C3C9000DAD1BB /* Remote+Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E8FE274C3C9000DAD1BB /* Remote+Player.swift */; };
+		0433E902274CF2E000DAD1BB /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E901274CF2E000DAD1BB /* AsyncOperation.swift */; };
+		0433E904274CF31700DAD1BB /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E903274CF31700DAD1BB /* DownloadOperation.swift */; };
+		0433E906274CF3D600DAD1BB /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E905274CF3D600DAD1BB /* Downloader.swift */; };
 		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
 		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
@@ -125,6 +128,9 @@
 		0433E8F9274C1F7200DAD1BB /* StaticFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFile.swift; sourceTree = "<group>"; };
 		0433E8FC274C211A00DAD1BB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0433E8FE274C3C9000DAD1BB /* Remote+Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remote+Player.swift"; sourceTree = "<group>"; };
+		0433E901274CF2E000DAD1BB /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		0433E903274CF31700DAD1BB /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
+		0433E905274CF3D600DAD1BB /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -317,6 +323,7 @@
 		0432ED19274A524D00784A40 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0433E900274CF2CF00DAD1BB /* DownloadTaskManager */,
 				0433E8FB274C20EE00DAD1BB /* Player */,
 				0433E8ED274BD62A00DAD1BB /* Validations */,
 				0432ED1F274A52A900784A40 /* Keychain */,
@@ -439,6 +446,16 @@
 				0433E8FE274C3C9000DAD1BB /* Remote+Player.swift */,
 			);
 			path = Player;
+			sourceTree = "<group>";
+		};
+		0433E900274CF2CF00DAD1BB /* DownloadTaskManager */ = {
+			isa = PBXGroup;
+			children = (
+				0433E901274CF2E000DAD1BB /* AsyncOperation.swift */,
+				0433E903274CF31700DAD1BB /* DownloadOperation.swift */,
+				0433E905274CF3D600DAD1BB /* Downloader.swift */,
+			);
+			path = DownloadTaskManager;
 			sourceTree = "<group>";
 		};
 		FA822091DF06A726BADE105F /* Frameworks */ = {
@@ -692,6 +709,7 @@
 				0432ED31274A546800784A40 /* Request+Error.swift in Sources */,
 				0432ED4D274BA17B00784A40 /* ViewModelErrorAction.swift in Sources */,
 				0433E8E9274BD45800DAD1BB /* Font+Extensions.swift in Sources */,
+				0433E902274CF2E000DAD1BB /* AsyncOperation.swift in Sources */,
 				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
 				0433E8EF274BD6AE00DAD1BB /* AuthenticationValidation.swift in Sources */,
 				0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */,
@@ -702,6 +720,7 @@
 				0432ED50274BBEF400784A40 /* ViewController.swift in Sources */,
 				0432ED40274A566800784A40 /* Reqıest+Provider.swift in Sources */,
 				0433E8F8274C1D1A00DAD1BB /* Device+Extensions.swift in Sources */,
+				0433E906274CF3D600DAD1BB /* Downloader.swift in Sources */,
 				0432ED49274BA00800784A40 /* AppCoordinator.swift in Sources */,
 				0433E8F1274C187300DAD1BB /* Color+Extensions.swift in Sources */,
 				0433E8FA274C1F7200DAD1BB /* StaticFile.swift in Sources */,
@@ -711,6 +730,7 @@
 				0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */,
 				0432ED28274A53BB00784A40 /* NetworkConnection.swift in Sources */,
 				0432ED2F274A542900784A40 /* Request+Credentials.swift in Sources */,
+				0433E904274CF31700DAD1BB /* DownloadOperation.swift in Sources */,
 				0432ED34274A54B800784A40 /* Interceptor+Base.swift in Sources */,
 				0433E8E4274BD3A500DAD1BB /* UserDefaultTag.swift in Sources */,
 				0432ED54274BC37F00784A40 /* ExampleCoordinator.swift in Sources */,
