@@ -15,6 +15,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.appCoordinator = .init(scene: scene)
         self.appCoordinator?.start()
     }
+    func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        completionHandler(DeepLinkHandler.shared.handleShortCut(shortCut: shortcutItem))
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) { }
 

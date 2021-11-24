@@ -56,6 +56,10 @@
 		0433E904274CF31700DAD1BB /* DownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E903274CF31700DAD1BB /* DownloadOperation.swift */; };
 		0433E906274CF3D600DAD1BB /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E905274CF3D600DAD1BB /* Downloader.swift */; };
 		0433E909274D1C1300DAD1BB /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E908274D1C1300DAD1BB /* FileManager.swift */; };
+		0433E90C274E232600DAD1BB /* Deeplink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90B274E232600DAD1BB /* Deeplink.swift */; };
+		0433E90E274E24A900DAD1BB /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90D274E24A900DAD1BB /* DeepLinkHandler.swift */; };
+		0433E910274E289700DAD1BB /* ShortCutParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90F274E289700DAD1BB /* ShortCutParser.swift */; };
+		0433E912274E2EFF00DAD1BB /* Notification+Center+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */; };
 		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
 		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
@@ -133,6 +137,10 @@
 		0433E903274CF31700DAD1BB /* DownloadOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadOperation.swift; sourceTree = "<group>"; };
 		0433E905274CF3D600DAD1BB /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		0433E908274D1C1300DAD1BB /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		0433E90B274E232600DAD1BB /* Deeplink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deeplink.swift; sourceTree = "<group>"; };
+		0433E90D274E24A900DAD1BB /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		0433E90F274E289700DAD1BB /* ShortCutParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutParser.swift; sourceTree = "<group>"; };
+		0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Center+Extensions.swift"; sourceTree = "<group>"; };
 		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -325,6 +333,7 @@
 		0432ED19274A524D00784A40 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				0433E90A274E22C200DAD1BB /* Deeplink */,
 				0433E907274D1BFB00DAD1BB /* FileManager */,
 				0433E900274CF2CF00DAD1BB /* DownloadTaskManager */,
 				0433E8FB274C20EE00DAD1BB /* Player */,
@@ -438,6 +447,7 @@
 				0433E8F5274C1B1200DAD1BB /* Date+Extensions.swift */,
 				0433E8F7274C1D1A00DAD1BB /* Device+Extensions.swift */,
 				0433E8F9274C1F7200DAD1BB /* StaticFile.swift */,
+				0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -467,6 +477,16 @@
 				0433E908274D1C1300DAD1BB /* FileManager.swift */,
 			);
 			path = FileManager;
+			sourceTree = "<group>";
+		};
+		0433E90A274E22C200DAD1BB /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				0433E90B274E232600DAD1BB /* Deeplink.swift */,
+				0433E90D274E24A900DAD1BB /* DeepLinkHandler.swift */,
+				0433E90F274E289700DAD1BB /* ShortCutParser.swift */,
+			);
+			path = Deeplink;
 			sourceTree = "<group>";
 		};
 		FA822091DF06A726BADE105F /* Frameworks */ = {
@@ -723,10 +743,12 @@
 				0433E902274CF2E000DAD1BB /* AsyncOperation.swift in Sources */,
 				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
 				0433E8EF274BD6AE00DAD1BB /* AuthenticationValidation.swift in Sources */,
+				0433E910274E289700DAD1BB /* ShortCutParser.swift in Sources */,
 				0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */,
 				0433E909274D1C1300DAD1BB /* FileManager.swift in Sources */,
 				0432ED43274A56BA00784A40 /* ExampleService.swift in Sources */,
 				0432ED25274A52CF00784A40 /* KeychainError.swift in Sources */,
+				0433E90E274E24A900DAD1BB /* DeepLinkHandler.swift in Sources */,
 				0432ED5A274BCF5400784A40 /* Response+Model.swift in Sources */,
 				0432ED58274BC40E00784A40 /* Example+Repository.swift in Sources */,
 				0432ED50274BBEF400784A40 /* ViewController.swift in Sources */,
@@ -752,6 +774,7 @@
 				0432ED5C274BD03400784A40 /* Example+Model.swift in Sources */,
 				0433E8E6274BD41100DAD1BB /* NetworkErrorViewController.swift in Sources */,
 				0432ED52274BBFEE00784A40 /* ExampleViewController.swift in Sources */,
+				0433E90C274E232600DAD1BB /* Deeplink.swift in Sources */,
 				0433E8FD274C211A00DAD1BB /* Player.swift in Sources */,
 				0433E8F6274C1B1200DAD1BB /* Date+Extensions.swift in Sources */,
 				0432ED36274A54E200784A40 /* Interceptor+Credential+Builder.swift in Sources */,
@@ -759,6 +782,7 @@
 				0432ED56274BC39C00784A40 /* ExampleViewModel.swift in Sources */,
 				0432ED2D274A540900784A40 /* Request.swift in Sources */,
 				0432ED3D274A55E900784A40 /* Interceptor+Response+Model.swift in Sources */,
+				0433E912274E2EFF00DAD1BB /* Notification+Center+Extensions.swift in Sources */,
 				0432ED23274A52C700784A40 /* KeychainTag.swift in Sources */,
 				0432ED21274A52BE00784A40 /* KeychainStore.swift in Sources */,
 			);

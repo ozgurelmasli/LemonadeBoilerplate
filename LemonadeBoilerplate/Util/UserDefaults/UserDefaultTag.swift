@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol UserdefaultsTag : AnyObject {
+protocol UserdefaultsTag {
     var identifier : String { get }
 }
 
@@ -15,4 +15,12 @@ extension UserdefaultsTag {
     func buildTag() -> String {
         return Bundle.main.bundleIdentifier ?? "" + identifier
      }
+}
+
+enum DeepLinkTag : UserdefaultsTag {
+    case hasDeepLink
+    
+    var identifier: String {
+        return "hasDeepLink"
+    }
 }

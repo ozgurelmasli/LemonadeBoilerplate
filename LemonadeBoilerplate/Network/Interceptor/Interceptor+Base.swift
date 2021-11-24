@@ -7,9 +7,9 @@
 
 import Alamofire
 
-public protocol InterceptorBaseProtocol : AnyObject {}
+protocol InterceptorBaseProtocol : AnyObject {}
 
-public protocol InterceptorBase : Alamofire.RequestInterceptor , InterceptorBaseProtocol {
+protocol InterceptorBase : Alamofire.RequestInterceptor , InterceptorBaseProtocol {
     
     associatedtype T : Codable
     
