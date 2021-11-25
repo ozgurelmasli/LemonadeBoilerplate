@@ -8,11 +8,11 @@
 import UIKit
 
 protocol ShortCutIdentifiable {
-    var localTitle    : String { get }
-    var localSubtitle : String { get }
-    var iconName      : String { get }
+    var localTitle: String { get }
+    var localSubtitle: String { get }
+    var iconName: String { get }
 }
-enum ShortCut : ParsableDeepLink , ShortCutIdentifiable , CaseIterable {
+enum ShortCut: ParsableDeepLink, ShortCutIdentifiable, CaseIterable {
     var localTitle: String {
         return "Example local title"
     }
@@ -32,16 +32,15 @@ enum ShortCut : ParsableDeepLink , ShortCutIdentifiable , CaseIterable {
     }
 }
 
-
 class ShortCutParser {
-    private static var referance : ShortCutParser? = ShortCutParser()
+    private static var referance: ShortCutParser? = ShortCutParser()
     
     static var shared: ShortCutParser {
         if referance == nil { referance  = ShortCutParser() }
         return referance!
     }
     
-    func register(){
+    func register() {
         let shortCuts = ShortCut.allCases.map { shortcut in
             UIApplicationShortcutItem(type: shortcut.identifier
                                       , localizedTitle: shortcut.localTitle
@@ -61,4 +60,3 @@ class ShortCutParser {
         }
     }
 }
-

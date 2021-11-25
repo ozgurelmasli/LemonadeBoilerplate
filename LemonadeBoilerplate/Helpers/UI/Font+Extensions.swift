@@ -15,14 +15,12 @@ extension UIFont {
      - returns: UIFont
      ```
      */
-    static func generateFont( _ name : String = "Avenir"
-                              , type : FontType = .black
-                              , size : CGFloat) -> UIFont {
+    static func generateFont( _ name: String = "Avenir", type: FontType = .black, size: CGFloat) -> UIFont {
         let fontName = name + "-" + type.rawValue
         return .init(name: fontName, size: size)!
     }
 }
-internal enum FontType : String {
+internal enum FontType: String {
     case black       = "Black"
     case medium      = "Medium"
     case heavy       = "Heavy"

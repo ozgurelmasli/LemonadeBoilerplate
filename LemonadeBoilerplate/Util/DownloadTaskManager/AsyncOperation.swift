@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AsynchronousOperation : Operation {
+public class AsynchronousOperation: Operation {
     override public var isAsynchronous: Bool {
         return true
     }

@@ -4,7 +4,5 @@
 //
 //  Created by Mac on 22.11.2021.
 //
-
-
-class ExampleViewModel : BaseViewModel<ExampleCoordinator> {
+class ExampleViewModel: BaseViewModel<ExampleCoordinator> {
 }

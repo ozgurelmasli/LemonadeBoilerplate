@@ -6,9 +6,9 @@
 //
 import UIKit
 
-public protocol Coordinator : AnyObject {
-    var navigationController : UINavigationController? { get set }
-    var parentCoordinator : Coordinator? { get set }
+public protocol Coordinator: AnyObject {
+    var navigationController: UINavigationController? { get set }
+    var parentCoordinator: Coordinator? { get set }
     /// Launch view controller and other elements in here
     func start(coordinator: Coordinator)
     /// After navigate back or dismiss func delete coordinator from child coordinators
@@ -18,14 +18,12 @@ public protocol Coordinator : AnyObject {
     /// Overrride this func use for creating VC , ViewModels and other elements
     func start()
     /// Navigate back func if navigation exists
-    func pop( _ animated : Bool)
+    func pop( _ animated: Bool)
     /// Segue with view controller and custom animation
-    func segue(viewController : UIViewController
-               , _ animated : Bool
-               , transition : UIView.AnimationOptions?)
+    func segue(viewController: UIViewController, _ animated: Bool, transition: UIView.AnimationOptions?)
 }
 
-public class BaseCoordinator : Coordinator {
+public class BaseCoordinator: Coordinator {
     /**
      Segue function
      
@@ -34,20 +32,15 @@ public class BaseCoordinator : Coordinator {
      - parameter transition: Default value is flipfromLeft. If you want use this function , send animated param as true
      ```
      */
-    public func segue(viewController: UIViewController
-                      , _ animated: Bool = false
-                      , transition: UIView.AnimationOptions? = nil) {
+    public func segue(viewController: UIViewController, _ animated: Bool = false, transition: UIView.AnimationOptions? = nil) {
         guard let window = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.appCoordinator?.window else { return }
         if animated {
-            UIView.transition(with: window
-                              , duration: 0.5
-                              , options: transition ?? .transitionFlipFromLeft
-                              , animations: {
+            UIView.transition(with: window, duration: 0.5, options: transition ?? .transitionFlipFromLeft, animations: {
                                 window.rootViewController = viewController
                                 window.makeKeyAndVisible()
                               })
 
-        }else {
+        } else {
             window.rootViewController = viewController
             window.makeKeyAndVisible()
         }

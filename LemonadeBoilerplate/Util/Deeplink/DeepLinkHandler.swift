@@ -8,34 +8,33 @@
 import Foundation
 import UIKit
 
-
 class DeepLinkHandler {
     
-    var deepLink : DeepLink?
+    var deepLink: DeepLink?
     
-    private static var referance : DeepLinkHandler? = DeepLinkHandler()
+    private static var referance: DeepLinkHandler? = DeepLinkHandler()
     
     static var shared: DeepLinkHandler {
         if referance == nil { referance  = DeepLinkHandler() }
         return referance!
     }
     
-    func handleShortCut(shortCut : UIApplicationShortcutItem) -> Bool {
+    func handleShortCut(shortCut: UIApplicationShortcutItem) -> Bool {
         deepLink = ShortCutParser.shared.parseShortCut(shortcut: shortCut)
         if deepLink != nil {
-            UserDefaults.standard.set(true, tag: DeepLinkTag.hasDeepLink)
+            UserDefaults.standard.set(data: true, tag: DeepLinkTag.hasDeepLink)
         }
         return deepLink != nil
     }
     
-    func handleLocalNotification(userInfo : [AnyHashable : Any]) {
-        //....
+    func handleLocalNotification(userInfo: [AnyHashable: Any]) {
+        // ....
         deepLink = .exampleAction(action: .exampleAction(actionId: "exampleId"))
-        UserDefaults.standard.set(true, tag: DeepLinkTag.hasDeepLink)
+        UserDefaults.standard.set(data: true, tag: DeepLinkTag.hasDeepLink)
     }
     
-    func handlePushNotification(){
-        //MARK: One signal implementation
-        UserDefaults.standard.set(true, tag: DeepLinkTag.hasDeepLink)
+    func handlePushNotification() {
+        // MARK: One signal implementation
+        UserDefaults.standard.set(data: true, tag: DeepLinkTag.hasDeepLink)
     }
 }

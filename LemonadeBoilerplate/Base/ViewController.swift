@@ -6,24 +6,26 @@
 //
 import UIKit
 
-protocol ViewController : AnyObject {
+protocol ViewController: AnyObject {
     /// View controller view model
-    var viewModel : ViewModel { get set }
+    var viewModel: ViewModel { get set }
     
     func alertCancelAction()
     func alertDoneAction()
 }
 
-class BaseViewController<VM : ViewModel , V : UIView> : UIViewController, ViewController {
+class BaseViewController<VM : ViewModel, V : UIView>: UIViewController, ViewController {
     /// Override this function if you want to give new operation when cancel button tapped in error state
     func alertCancelAction() { }
     func alertDoneAction() { }
     
     var viewModel: ViewModel
-    var safeViewModel : VM { return (viewModel as! VM) }
-    var safeView : V { return (view as! V) }
+    // swiftlint:disable force_cast
+    var safeViewModel: VM { return (viewModel as! VM) }
+    var safeView: V { return (view as! V) }
+    // swiftlint:enable force_cast
     
-    init(viewModel : VM) {
+    init(viewModel: VM) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -37,8 +39,7 @@ class BaseViewController<VM : ViewModel , V : UIView> : UIViewController, ViewCo
         fatalError("init(coder:) has not been implemented")
     }
 }
-//MARK: ViewModelAction function
-extension BaseViewController : ViewModelErrorAction {
+extension BaseViewController: ViewModelErrorAction {
     func didErrorOccurred(_ state: UIError) {
         switch state {
         case .NETWORK_ERROR:
@@ -46,7 +47,7 @@ extension BaseViewController : ViewModelErrorAction {
             let errorVC = NetworkErrorVC()
             errorVC.modalPresentationStyle = .fullScreen
             (errorVC.view as? NetworkErrorView)?.networkViewDelegate = self
-            present(errorVC , animated: true)
+            present(errorVC, animated: true)
         case .REQUEST_ERROR:
             /// Create try request or cancel directly
             let alert = UIAlertController(title: "Alert", message: "Request has been failed. Try Again.", preferredStyle: .alert)
@@ -58,7 +59,7 @@ extension BaseViewController : ViewModelErrorAction {
             })
             alert.addAction(tryAgainAction)
             alert.addAction(cancelAction)
-            present(alert , animated: true)
+            present(alert, animated: true)
         case .ALERT(let message):
             /// Create normal alert with custom message and cancel action
             let alert = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
@@ -70,14 +71,11 @@ extension BaseViewController : ViewModelErrorAction {
             }
             alert.addAction(cancelAction)
             alert.addAction(doneAction)
-            present(alert , animated: true)
+            present(alert, animated: true)
         }
     }
 }
-
-
-//MARK: NetworkErrorAction Function
-extension BaseViewController : NetworkErrorActionDelegate {
+extension BaseViewController: NetworkErrorActionDelegate {
     func didTryAgainButtonTapped() {
         self.dismiss(animated: true, completion: nil)
         viewModel.tryRequest()

@@ -9,70 +9,68 @@ import Foundation
 import AVKit
 
 enum PlayerSlideAction {
-    case slide(value : CGFloat)
+    case slide(value: CGFloat)
     case next15Seconds
     case prev15Seconds
 }
 
-
-protocol CustomPlayerDelegate : AnyObject {
+protocol CustomPlayerDelegate: AnyObject {
     func didPlayerPaused()
     func didPlayerPlayed()
-    func didDurationChanged( _ second : Int , _ minute : Int)
-    func didTotalDurationChanged( _ duration : Float64)
-    func didPlayerStateChanged( _ state : AVKeyValueStatus)
+    func didDurationChanged( _ second: Int, _ minute: Int)
+    func didTotalDurationChanged( _ duration: Float64)
+    func didPlayerStateChanged( _ state: AVKeyValueStatus)
 }
 
-class CustomPlayer : NSObject {
+class CustomPlayer: NSObject {
     
-    weak var customPlayerActionDelegate : CustomPlayerDelegate?
+    weak var customPlayerActionDelegate: CustomPlayerDelegate?
     
-    var volume : Float = 0.5 {
+    var volume: Float = 0.5 {
         didSet {
             self.player?.volume = volume
         }
     }
     
-    var isLoopEnabled : Bool = false
+    var isLoopEnabled: Bool = false
     
-    private var currentPlayingItemIndex : Int = 0
-    private var assetURLs : [String] = []
+    private var currentPlayingItemIndex: Int = 0
+    private var assetURLs: [String] = []
     
-    private var assets : AVURLAsset?
-    private var player : AVQueuePlayer?
-    private var playerItem : AVPlayerItem?
-    private var playerLooper : AVPlayerLooper?
-    private var remotePlayer : CustomRemotePlayer?
-    private var timeObserver : Any?
+    private var assets: AVURLAsset?
+    private var player: AVQueuePlayer?
+    private var playerItem: AVPlayerItem?
+    private var playerLooper: AVPlayerLooper?
+    private var remotePlayer: CustomRemotePlayer?
+    private var timeObserver: Any?
     
-    init( _ url : String) {
+    init( _ url: String) {
         super.init()
         assetURLs = [url]
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
     }
-    init( _ urls : [String]){
+    init( _ urls: [String]) {
         super.init()
         assetURLs = urls
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
     }
-    private var playerURL : URL? {
+    private var playerURL: URL? {
         return URL(string: assetURLs[currentPlayingItemIndex])
     }
-    private var assetOptions : [String : [String : String]] {
+    private var assetOptions: [String: [String: String]] {
         return [
-            "AVURLAssetHTTPHeaderFieldsKey" : [
+            "AVURLAssetHTTPHeaderFieldsKey": [
                 "session": "Bearer ",
-                "Authorization" : "Bearer "
+                "Authorization": "Bearer "
             ]
         ]
     }
 }
 
-
 extension CustomPlayer {
-    private func playerConfiguration(){
+    private func playerConfiguration() {
         guard let url =  playerURL else { return }
         assets     = AVURLAsset(url: url, options: assetOptions)
         playerItem = AVPlayerItem(asset: assets!)
@@ -81,19 +79,16 @@ extension CustomPlayer {
         if isLoopEnabled {
             playerLooper = AVPlayerLooper(player: player!, templateItem: playerItem!)
         }
-        assets?.loadValuesAsynchronously(forKeys: ["playable"]
-                                         , completionHandler: { [weak self] in
-            var error : NSError? = nil
+        assets?.loadValuesAsynchronously(forKeys: ["playable"], completionHandler: { [weak self] in
+            var error: NSError?
             guard let status = self?.assets?.statusOfValue(forKey: "playable", error: &error) else { return }
             switch status {
             case .loaded:
                 self?.customPlayerActionDelegate?.didTotalDurationChanged(CMTimeGetSeconds(self?.playerItem?.asset.duration ?? CMTime.zero))
-                self?.remotePlayer?.changePlayerData(self?.player?.currentTime().seconds ?? 0.0
-                                                     , self?.playerItem?.asset.duration.seconds ?? 0.0
-                                                     , self?.player?.rate ?? 0.0)
+                self?.remotePlayer?.changePlayerData(self?.player?.currentTime().seconds ?? 0.0, self?.playerItem?.asset.duration.seconds ?? 0.0, self?.player?.rate ?? 0.0)
                 self?.customPlayerActionDelegate?.didPlayerStateChanged(status)
                 self?.timeObserver =  self?.player?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: .main, using: { cmtime in
-                    let time : Float64 = CMTimeGetSeconds(cmtime);
+                    let time: Float64 = CMTimeGetSeconds(cmtime)
                     let second = Int(time) % 60
                     let minute = Int(time) / 60
                     self?.customPlayerActionDelegate?.didDurationChanged(second, minute)
@@ -106,9 +101,9 @@ extension CustomPlayer {
     }
 }
 
-//MARK: Core
+// MARK: Core
 extension CustomPlayer {
-    func next( _ url : String? = nil){
+    func next( _ url: String? = nil) {
         reset()
         clear()
         currentPlayingItemIndex += 1
@@ -120,7 +115,7 @@ extension CustomPlayer {
         playerConfiguration()
     }
     
-    func previous( _ url : String? = nil){
+    func previous( _ url: String? = nil) {
         reset()
         clear()
         currentPlayingItemIndex += 1
@@ -132,24 +127,24 @@ extension CustomPlayer {
         playerConfiguration()
     }
     
-    func play(){
+    func play() {
         self.player?.play()
         self.customPlayerActionDelegate?.didPlayerPlayed()
     }
-    func pause(){
+    func pause() {
         self.player?.play()
         self.customPlayerActionDelegate?.didPlayerPaused()
     }
-    func reset(){
+    func reset() {
         self.player?.pause()
         self.player?.seek(to: .zero)
         self.customPlayerActionDelegate?.didDurationChanged(0, 0)
         self.customPlayerActionDelegate?.didTotalDurationChanged(0.0)
-        //NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        // NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
     }
-    func slide(action : PlayerSlideAction){
+    func slide(action: PlayerSlideAction) {
         pause()
-        let slideValue : CMTime
+        let slideValue: CMTime
         switch action {
         case .slide(let value):
             slideValue = CMTime(seconds: Double(value), preferredTimescale: 1000)
@@ -164,7 +159,7 @@ extension CustomPlayer {
         player?.seek(to: slideValue)
         play()
     }
-    func clear(){
+    func clear() {
         player?.removeTimeObserver(self.timeObserver as Any)
         playerItem?.cancelPendingSeeks()
         playerItem?.asset.cancelLoading()
@@ -177,9 +172,9 @@ extension CustomPlayer {
     }
 }
 
-//MARK: Remote Control
+// MARK: Remote Control
 
-extension CustomPlayer : CustomRemotePlayerAction {
+extension CustomPlayer: CustomRemotePlayerAction {
     func playCommand() {
         play()
     }

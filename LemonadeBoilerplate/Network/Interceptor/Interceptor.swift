@@ -7,7 +7,7 @@
 
 import Alamofire
 
-class Interceptor : InterceptorBase {
+class Interceptor: InterceptorBase {
     func configureRequest(_ request: URLRequest, session: Session, addedParams: [InterceptorCredentialBuilder]) {
         
     }
@@ -28,6 +28,6 @@ class Interceptor : InterceptorBase {
         
     }
     
-    typealias T = InterceptorResponseModel
+    typealias INTERCEPTOR_RESPONSE_MODEL = InterceptorResponseModel
     
 }

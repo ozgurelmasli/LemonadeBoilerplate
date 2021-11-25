@@ -6,7 +6,7 @@
 //
 import Alamofire
 
-public enum ProviderError : Error , Equatable {
+public enum ProviderError: Error, Equatable {
     /// Unknown error
     case SOMETHING_WENT_WRONG
     /// URL is not valid
@@ -14,19 +14,21 @@ public enum ProviderError : Error , Equatable {
     /// Device has no internet connection
     case NO_INTERNET_CONNECTION
     /// Custom error type with message
-    case CUSTOM(message : String)
+    case CUSTOM(message: String)
 }
 
-fileprivate let SessionManager : Session  = {
+private let sessionManager: Session  = {
+    // swiftlint:disable force_cast
     return .init(configuration: NetworkConnection.shared.sessionConfiguration
                  , interceptor: (NetworkConnection.shared.interceptor as! RequestInterceptor)
                  , serverTrustManager: NetworkConnection.shared.sessionTrustManager)
+    // swiftlint:enable force_cast
 }()
 
-public protocol ProviderProtocol : AnyObject {
-    var isNetworkReachable : Bool { get }
+public protocol ProviderProtocol: AnyObject {
+    var isNetworkReachable: Bool { get }
     
-    associatedtype R : ServiceRequest
+    associatedtype SRVRQST: ServiceRequest
     
     /**
      Network Request Function
@@ -46,23 +48,18 @@ public protocol ProviderProtocol : AnyObject {
      ```
      
      */
-    func request<D>( _ request : R
-                     , decoding : D.Type
-                     , queue : DispatchQueue , responseHandler : @escaping (Result<D , ProviderError>)->Void) where D : Decodable , D: Encodable
+    func request<D>(serviceRequest: SRVRQST, decoding: D.Type, queue: DispatchQueue, responseHandler : @escaping (Result<D, ProviderError>) -> Void) where D: Decodable, D: Encodable
 }
 
-public class RequestProvider<S : ServiceRequest> : ProviderProtocol {
+public class RequestProvider<S: ServiceRequest>: ProviderProtocol {
     public var isNetworkReachable: Bool {
         return NetworkReachabilityManager()?.isReachable ?? false
     }
     
     public init() {}
     
-    public func request<D>( _ service : S
-                            , decoding : D.Type
-                            , queue : DispatchQueue = .init(label: Bundle.main.bundleIdentifier ?? "", qos: .background, target: .main)
-                            , responseHandler : @escaping (Result<D, ProviderError>)-> Void) where D : Decodable, D : Encodable {
-        guard let url = URL(string: service.buildURL()) else {
+    public func request<D>(serviceRequest: S, decoding: D.Type, queue: DispatchQueue = .init(label: Bundle.main.bundleIdentifier ?? "", qos: .background, target: .main), responseHandler: @escaping (Result<D, ProviderError>) -> Void) where D: Decodable, D: Encodable {
+        guard let url = URL(string: serviceRequest.buildURL()) else {
             responseHandler(.failure(.URL_ERROR))
             return
         }
@@ -70,16 +67,16 @@ public class RequestProvider<S : ServiceRequest> : ProviderProtocol {
             responseHandler(.failure(.NO_INTERNET_CONNECTION))
             return
         }
-        let request = SessionManager.request(url
-                                             , method: service.credential.method
-                                             , parameters: service.credential.body
-                                             , encoding: (service.credential.body != nil && service.credential.method == .get) ? URLEncoding.httpBody : URLEncoding.default
-                                             , headers: service.credential.header)
-        request.validate(statusCode: 200...399).responseDecodable(of: D.self
-                                                                  , queue: queue) { response in
+        let credential = serviceRequest.credential
+        let request = sessionManager.request(url, method: credential.method
+                                             , parameters: credential.body
+                                             , encoding: (credential.body != nil && credential.method == .get) ? URLEncoding.httpBody : URLEncoding.default
+                                             , headers: credential.header)
+        request.validate(statusCode: 200...399).responseDecodable(of: D.self, queue: queue) { response in
             if let statusCode = response.response?.statusCode {
                 if NetworkConnection.shared.isServiceLoggerEnabled {
-                    serviceLogger("Request URL : \(url) , statusCode : \(statusCode) , duration : \(String(describing: response.metrics?.taskInterval.duration))")
+                    serviceLogger(message: "Request URL : \(url) , statusCode : \(statusCode) , duration : \(String(describing: response.metrics?.taskInterval.duration))")
+                    
                 }
             }
             if let err = response.error {

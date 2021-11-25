@@ -6,20 +6,19 @@
 //
 import Foundation
 
-
-enum StaticFile : String {
+enum StaticFile: String {
     
     case exampleFile  = "exampleFileName"
     
-    var fileType : String {
+    var fileType: String {
         return "json"
     }
-    var filePath : String?  {
+    var filePath: String? {
         return Bundle.main.path(forResource: self.rawValue, ofType: fileType)
     }
 }
 extension StaticFile {
-    func JSON<T : Codable>(convert : T.Type) -> T? {
+    func JSON<T: Codable>(convert: T.Type) -> T? {
         guard let path = filePath else { return nil }
         do {
             let url = URL.init(fileURLWithPath: path)
@@ -27,7 +26,7 @@ extension StaticFile {
             let decoder = JSONDecoder.init()
             let model = try decoder.decode(T.self, from: data)
             return model
-        }catch {
+        } catch {
             return nil
         }
     }

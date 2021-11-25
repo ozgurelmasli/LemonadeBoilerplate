@@ -6,12 +6,12 @@
 //
 import Foundation
 
-public protocol KeychainTag  {
-    var keychainKey : String { get }
+public protocol KeychainTag {
+    var keychainKey: String { get }
 }
 extension KeychainTag {
     
-    func identifier()-> String {
+    func identifier() -> String {
         return bundle() + keychainKey
     }
     
@@ -20,16 +20,16 @@ extension KeychainTag {
     }
 }
 
-enum AppKeychainTag : KeychainTag {
+enum AppKeychainTag: KeychainTag {
     var keychainKey: String {
         switch self {
-        case .Authorization: return "Authorization"
+        case .authorization: return "Authorization"
         case .session : return "session"
         case .uuid : return "uui"
         }
     }
     
     case uuid
-    case Authorization
+    case authorization
     case session
 }

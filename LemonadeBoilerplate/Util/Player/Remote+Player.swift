@@ -8,20 +8,20 @@
 import UIKit
 import MediaPlayer
 
-protocol CustomRemotePlayerAction : AnyObject {
+protocol CustomRemotePlayerAction: AnyObject {
     func playCommand()
     func pauseCommand()
     func nextTrackCommand()
     func previousTrackCommand()
-    func slideCommand( _ value : CGFloat)
+    func slideCommand( _ value: CGFloat)
 }
 
 class CustomRemotePlayer {
-    weak var customRemotePlayerActionDelegate : CustomRemotePlayerAction?
+    weak var customRemotePlayerActionDelegate: CustomRemotePlayerAction?
     
-    private var nowPlayingInfo = [String : Any]()
+    private var nowPlayingInfo = [String: Any]()
     
-    init(){
+    init() {
         setupRemoteTransportControls()
     }
     deinit {
@@ -30,11 +30,11 @@ class CustomRemotePlayer {
         clearRemoteControls()
     }
     
-    func changePlayerUI(playerTitle : String , albumTitle : String , image :UIImage? = nil , imageURL : URL?){
+    func changePlayerUI(playerTitle: String, albumTitle: String, image: UIImage? = nil, imageURL: URL?) {
         nowPlayingInfo[MPMediaItemPropertyTitle] = playerTitle
         nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = albumTitle
         if let image = image {
-            self.nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: CGSize(width: 300, height: 300)) { size in
+            self.nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: CGSize(width: 300, height: 300)) { _ in
                 return image
             }
         }
@@ -50,19 +50,19 @@ class CustomRemotePlayer {
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
     
-    func changePlayerData( _ seconds : Double , _ duration : Double , _ rate : Float ){
+    func changePlayerData( _ seconds: Double, _ duration: Double, _ rate: Float ) {
         nowPlayingInfo[MPNowPlayingInfoPropertyElapsedPlaybackTime] = seconds
         nowPlayingInfo[MPMediaItemPropertyPlaybackDuration] = duration
         nowPlayingInfo[MPNowPlayingInfoPropertyPlaybackRate] = rate
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
     
-    func clear(){
+    func clear() {
         nowPlayingInfo = [:]
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
     
-    private func clearRemoteControls(){
+    private func clearRemoteControls() {
         MPRemoteCommandCenter.shared().playCommand.removeTarget(self, action: nil)
         MPRemoteCommandCenter.shared().pauseCommand.removeTarget(self, action: nil)
         MPRemoteCommandCenter.shared().nextTrackCommand.removeTarget(self, action: nil)
@@ -74,24 +74,24 @@ class CustomRemotePlayer {
         let commandCenter = MPRemoteCommandCenter.shared()
         
         // Add handler for Play Command
-        commandCenter.playCommand.addTarget { [weak self] event in
+        commandCenter.playCommand.addTarget { [weak self] _ in
             guard let self = self else { return .commandFailed }
             self.customRemotePlayerActionDelegate?.playCommand()
             return .success
         }
         
         // Add handler for Pause Command
-        commandCenter.pauseCommand.addTarget { [weak self] event in
+        commandCenter.pauseCommand.addTarget { [weak self] _ in
             guard let self = self else { return .commandFailed }
             self.customRemotePlayerActionDelegate?.pauseCommand()
             return .success
         }
-        commandCenter.nextTrackCommand.addTarget{ [weak self] event in
+        commandCenter.nextTrackCommand.addTarget { [weak self] _ in
             guard let self = self else { return .commandFailed }
             self.customRemotePlayerActionDelegate?.nextTrackCommand()
             return .success
         }
-        commandCenter.previousTrackCommand.addTarget{ [weak self] event in
+        commandCenter.previousTrackCommand.addTarget { [weak self] _ in
             guard let self = self else { return .commandFailed }
             self.customRemotePlayerActionDelegate?.previousTrackCommand()
             return .success
@@ -103,4 +103,3 @@ class CustomRemotePlayer {
         }
     }
 }
-

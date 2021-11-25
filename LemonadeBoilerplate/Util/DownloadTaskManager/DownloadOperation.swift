@@ -7,11 +7,11 @@
 
 import Foundation
 
-class DownloadOperation : AsynchronousOperation {
+class DownloadOperation: AsynchronousOperation {
     public var task: URLSessionTask!
-    public var expectedLength : Int64? = nil
+    public var expectedLength: Int64?
     
-    init(session : URLSession , request : URLRequest) {
+    init(session: URLSession, request: URLRequest) {
         task = session.downloadTask(with: request)
         super.init()
     }
@@ -27,7 +27,7 @@ class DownloadOperation : AsynchronousOperation {
 
 extension DownloadOperation {
     
-    func downloadSuccess(){
+    func downloadSuccess() {
         completeOperation()
     }
     func downloadFailed(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {

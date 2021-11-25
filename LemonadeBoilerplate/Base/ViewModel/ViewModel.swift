@@ -7,25 +7,27 @@
 
 import Foundation
 
-protocol ViewModel : AnyObject {
-    var coordinator : BaseCoordinator? { get set }
+protocol ViewModel: AnyObject {
+    var coordinator: BaseCoordinator? { get set }
     func tryRequest()
 }
 
-class BaseViewModel<C : BaseCoordinator>: ViewModel {
+class BaseViewModel<C: BaseCoordinator>: ViewModel {
     func tryRequest() { }
     
     public var coordinator: BaseCoordinator?
     
-    public var safeCoordinator : C {
+    public var safeCoordinator: C {
+        // swiftlint:disable force_cast
         return (coordinator as! C)
+        // swiftlint:enable force_cast
     }
     
-    init(coordinator : C) {
+    init(coordinator: C) {
         self.coordinator = coordinator
     }
     /// Pop function
-    func pop( _ animated : Bool = true) {
+    func pop( _ animated: Bool = true) {
         coordinator?.pop(animated)
     }
 }

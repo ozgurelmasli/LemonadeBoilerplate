@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExampleView : UIView {
+class ExampleView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
@@ -19,7 +19,7 @@ class ExampleView : UIView {
     
 }
 
-class ExampleViewController : BaseViewController<ExampleViewModel , ExampleView> {
+class ExampleViewController: BaseViewController<ExampleViewModel, ExampleView> {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

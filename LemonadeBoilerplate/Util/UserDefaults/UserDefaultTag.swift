@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserdefaultsTag {
-    var identifier : String { get }
+    var identifier: String { get }
 }
 
 extension UserdefaultsTag {
@@ -17,7 +17,7 @@ extension UserdefaultsTag {
      }
 }
 
-enum DeepLinkTag : UserdefaultsTag {
+enum DeepLinkTag: UserdefaultsTag {
     case hasDeepLink
     
     var identifier: String {

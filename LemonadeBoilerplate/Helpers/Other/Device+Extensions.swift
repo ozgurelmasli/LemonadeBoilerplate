@@ -8,17 +8,19 @@
 import UIKit
 
 public extension UIDevice {
-    func isStorageAvaliable(fileSize : Int64) -> Bool {
+    func isStorageAvaliable(fileSize: Int64) -> Bool {
         return (self.freeDiskSpaceInBytes - fileSize) > 0
     }
-    var totalDiskSpaceInBytes:Int64 {
+    var totalDiskSpaceInBytes: Int64 {
         guard let systemAttributes = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory() as String),
               let space = (systemAttributes[FileAttributeKey.systemSize] as? NSNumber)?.int64Value else { return 0 }
         return space
         }
-    var freeDiskSpaceInBytes:Int64 {
+    var freeDiskSpaceInBytes: Int64 {
         if #available(iOS 11.0, *) {
-            if let space = try? URL(fileURLWithPath: NSHomeDirectory() as String).resourceValues(forKeys: [URLResourceKey.volumeAvailableCapacityForImportantUsageKey]).volumeAvailableCapacityForImportantUsage {
+            let url = URL(fileURLWithPath: NSHomeDirectory() as String)
+            let resource = try? url.resourceValues(forKeys: [URLResourceKey.volumeAvailableCapacityForImportantUsageKey])
+            if let space = resource?.volumeAvailableCapacityForImportantUsage {
                     return space
                 } else {
                     return 0
@@ -102,7 +104,6 @@ public extension UIDevice {
             case "AppleTV6,2":                              return "Apple TV 4K"
             case "AudioAccessory1,1":                       return "HomePod"
             case "AudioAccessory5,1":                       return "HomePod mini"
-            case "i386", "x86_64":                          return "Simulator \(mapToDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS"))"
             default:                                        return identifier
             }
             #elseif os(tvOS)

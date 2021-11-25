@@ -7,67 +7,66 @@
 import Foundation
 
 public class KeychainStore {
-    private static var referance : KeychainStore? = KeychainStore()
+    private static var referance: KeychainStore? = KeychainStore()
     
     public static var shared: KeychainStore {
         if referance == nil { referance  = KeychainStore() }
         return referance!
     }
     
-    public func add(data : Data , tag : KeychainTag) throws {
+    public func add(data: Data, tag: KeychainTag) throws {
         let query = [
             kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock,
-            kSecClass as String       : kSecClassGenericPassword as String,
-            kSecAttrAccount as String : tag.identifier(),
-            kSecValueData as String   : data ] as [AnyHashable : Any]
+            kSecClass as String: kSecClassGenericPassword as String,
+            kSecAttrAccount as String: tag.identifier(),
+            kSecValueData as String: data ] as [AnyHashable: Any]
         SecItemDelete(query as CFDictionary)
         
-        var result : CFTypeRef? = nil
+        var result: CFTypeRef?
         let status = SecItemAdd(query as CFDictionary, &result)
         
-        if status == errSecSuccess { print("Data saved to keychain") }
-        else {
-            if let err : String = SecCopyErrorMessageString(status, nil) as String? {
+        if status == errSecSuccess { print("Data saved to keychain") } else {
+            if let err: String = SecCopyErrorMessageString(status, nil) as String? {
                 print(err)
             }
             throw KeychainError.WRITE_ERROR
         }
     }
     
-    public func delete(tag : KeychainTag) {
-        let query : [String : Any] = [
-            kSecClass as String       : kSecClassGenericPassword as String,
-            kSecAttrAccount as String : tag.identifier(),
+    public func delete(tag: KeychainTag) {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword as String,
+            kSecAttrAccount as String: tag.identifier()
         ]
         SecItemDelete(query as CFDictionary)
         print("Data has been deleted from keychain")
     }
     
-    public func load(tag : KeychainTag) throws -> Data {
+    public func load(tag: KeychainTag) throws -> Data {
         let query = [
-            kSecClass as String       : kSecClassGenericPassword,
-            kSecAttrAccount as String : tag.identifier(),
-            kSecReturnData as String  : kCFBooleanTrue,
-            kSecMatchLimit as String  : kSecMatchLimitOne ] as [String : Any]
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: tag.identifier(),
+            kSecReturnData as String: kCFBooleanTrue,
+            kSecMatchLimit as String: kSecMatchLimitOne ] as [String: Any]
         
-        var dataTypeRef: AnyObject? = nil
+        var dataTypeRef: AnyObject?
         
         let status: OSStatus = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
         
-        if status == noErr , let data = dataTypeRef as? Data {
+        if status == noErr, let data = dataTypeRef as? Data {
             return data
-        }else {
+        } else {
             throw KeychainError.READ_ERROR
         }
     }
 }
 extension KeychainStore {
     /// Converter String -> Data
-    public func convertToData(string : String)->Data? {
+    public func convertToData(string: String) -> Data? {
         return string.data(using: .utf8)
     }
     /// Converter Data -> String
-    public func convertToString(data :  Data)-> String? {
+    public func convertToString(data: Data) -> String? {
         return String(data: data, encoding: .utf8)
     }
 }

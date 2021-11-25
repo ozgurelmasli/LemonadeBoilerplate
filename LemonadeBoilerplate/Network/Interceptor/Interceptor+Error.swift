@@ -7,7 +7,7 @@
 import Alamofire
 
 public protocol InterceptorErrorProtocol {
-    var errorMessage : String { get }
-    var statusCode   : Int { get }
-    var isRetryable  : RetryResult { get }
+    var errorMessage: String { get }
+    var statusCode: Int { get }
+    var isRetryable: RetryResult { get }
 }
