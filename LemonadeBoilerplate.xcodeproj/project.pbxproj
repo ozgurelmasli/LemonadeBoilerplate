@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041BB38A275244B40026E740 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB389275244B40026E740 /* Product.swift */; };
+		041BB38C275244CF0026E740 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38B275244CF0026E740 /* IAPError.swift */; };
+		041BB38E275245160026E740 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38D275245160026E740 /* Request.swift */; };
 		0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDB274A4C1600784A40 /* AppDelegate.swift */; };
 		0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDD274A4C1600784A40 /* SceneDelegate.swift */; };
 		0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE4274A4C1900784A40 /* Assets.xcassets */; };
@@ -60,6 +63,7 @@
 		0433E90E274E24A900DAD1BB /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90D274E24A900DAD1BB /* DeepLinkHandler.swift */; };
 		0433E910274E289700DAD1BB /* ShortCutParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90F274E289700DAD1BB /* ShortCutParser.swift */; };
 		0433E912274E2EFF00DAD1BB /* Notification+Center+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */; };
+		0447773F274FA86B000BED78 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447773E274FA86B000BED78 /* IAPHelper.swift */; };
 		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
 		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
@@ -84,6 +88,9 @@
 
 /* Begin PBXFileReference section */
 		03B42AD09365CA37216D22E2 /* Pods-LemonadeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		041BB389275244B40026E740 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		041BB38B275244CF0026E740 /* IAPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPError.swift; sourceTree = "<group>"; };
+		041BB38D275245160026E740 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0432ECDB274A4C1600784A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0432ECDD274A4C1600784A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +148,7 @@
 		0433E90D274E24A900DAD1BB /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
 		0433E90F274E289700DAD1BB /* ShortCutParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutParser.swift; sourceTree = "<group>"; };
 		0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Center+Extensions.swift"; sourceTree = "<group>"; };
+		0447773E274FA86B000BED78 /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +198,13 @@
 				03B42AD09365CA37216D22E2 /* Pods-LemonadeBoilerplateTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		041BB38F27524E190026E740 /* Trackers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Trackers;
 			sourceTree = "<group>";
 		};
 		0432ECCF274A4C1600784A40 = {
@@ -333,6 +348,8 @@
 		0432ED19274A524D00784A40 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				041BB38F27524E190026E740 /* Trackers */,
+				0447773D274FA842000BED78 /* IAP */,
 				0433E90A274E22C200DAD1BB /* Deeplink */,
 				0433E907274D1BFB00DAD1BB /* FileManager */,
 				0433E900274CF2CF00DAD1BB /* DownloadTaskManager */,
@@ -487,6 +504,17 @@
 				0433E90F274E289700DAD1BB /* ShortCutParser.swift */,
 			);
 			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		0447773D274FA842000BED78 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				0447773E274FA86B000BED78 /* IAPHelper.swift */,
+				041BB389275244B40026E740 /* Product.swift */,
+				041BB38B275244CF0026E740 /* IAPError.swift */,
+				041BB38D275245160026E740 /* Request.swift */,
+			);
+			path = IAP;
 			sourceTree = "<group>";
 		};
 		FA822091DF06A726BADE105F /* Frameworks */ = {
@@ -757,12 +785,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0432ED31274A546800784A40 /* Request+Error.swift in Sources */,
+				041BB38E275245160026E740 /* Request.swift in Sources */,
+				041BB38C275244CF0026E740 /* IAPError.swift in Sources */,
 				0432ED4D274BA17B00784A40 /* ViewModelErrorAction.swift in Sources */,
 				0433E8E9274BD45800DAD1BB /* Font+Extensions.swift in Sources */,
 				0433E902274CF2E000DAD1BB /* AsyncOperation.swift in Sources */,
 				0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */,
 				0433E8EF274BD6AE00DAD1BB /* AuthenticationValidation.swift in Sources */,
 				0433E910274E289700DAD1BB /* ShortCutParser.swift in Sources */,
+				041BB38A275244B40026E740 /* Product.swift in Sources */,
 				0432ED39274A554700784A40 /* Interceptor+Error.swift in Sources */,
 				0433E909274D1C1300DAD1BB /* FileManager.swift in Sources */,
 				0432ED43274A56BA00784A40 /* ExampleService.swift in Sources */,
@@ -782,6 +813,7 @@
 				0432ED1B274A527400784A40 /* UserDefaults.swift in Sources */,
 				0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */,
 				0432ED28274A53BB00784A40 /* NetworkConnection.swift in Sources */,
+				0447773F274FA86B000BED78 /* IAPHelper.swift in Sources */,
 				0432ED2F274A542900784A40 /* Request+Credentials.swift in Sources */,
 				0433E904274CF31700DAD1BB /* DownloadOperation.swift in Sources */,
 				0432ED34274A54B800784A40 /* Interceptor+Base.swift in Sources */,

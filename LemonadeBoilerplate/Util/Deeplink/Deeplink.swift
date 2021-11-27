@@ -5,15 +5,11 @@
 //  Created by Mac on 24.11.2021.
 //
 
-protocol ParsableDeepLink {
-    var identifier: String { get }
-}
-
 enum DeepLink {
-    enum ExampleDeepLinkAction: ParsableDeepLink {
+    enum ExampleDeepLinkAction: Identifiable {
         case exampleAction(actionId: String)
         
-        var identifier: String {
+        var id: String {
             return "exampleIdentifier"
         }
     }

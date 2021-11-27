@@ -20,4 +20,5 @@ public struct RequestCredentials {
 
 public enum Service: String {
     case exampleService = "example-service"
+    case purchaseService = "purchase-service"
 }

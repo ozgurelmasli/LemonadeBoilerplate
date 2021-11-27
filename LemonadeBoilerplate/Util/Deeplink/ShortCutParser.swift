@@ -12,7 +12,7 @@ protocol ShortCutIdentifiable {
     var localSubtitle: String { get }
     var iconName: String { get }
 }
-enum ShortCut: ParsableDeepLink, ShortCutIdentifiable, CaseIterable {
+enum ShortCut: Identifiable, ShortCutIdentifiable, CaseIterable {
     var localTitle: String {
         return "Example local title"
     }
@@ -27,7 +27,7 @@ enum ShortCut: ParsableDeepLink, ShortCutIdentifiable, CaseIterable {
     
     case exampleShortCut
     
-    var identifier: String {
+    var id: String {
         return "exampleShortCut"
     }
 }
@@ -42,7 +42,7 @@ class ShortCutParser {
     
     func register() {
         let shortCuts = ShortCut.allCases.map { shortcut in
-            UIApplicationShortcutItem(type: shortcut.identifier
+            UIApplicationShortcutItem(type: shortcut.id
                                       , localizedTitle: shortcut.localTitle
                                       , localizedSubtitle: shortcut.localSubtitle
                                       , icon: UIApplicationShortcutIcon(systemImageName: shortcut.iconName)
@@ -53,7 +53,7 @@ class ShortCutParser {
     
     func parseShortCut(shortcut: UIApplicationShortcutItem) -> DeepLink? {
         switch shortcut.type {
-        case ShortCut.exampleShortCut.identifier:
+        case ShortCut.exampleShortCut.id:
             return .exampleAction(action: .exampleAction(actionId: "exampleId"))
         default:
             return nil
