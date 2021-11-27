@@ -10,6 +10,8 @@
 		041BB38A275244B40026E740 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB389275244B40026E740 /* Product.swift */; };
 		041BB38C275244CF0026E740 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38B275244CF0026E740 /* IAPError.swift */; };
 		041BB38E275245160026E740 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38D275245160026E740 /* Request.swift */; };
+		041BB39127524E3C0026E740 /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39027524E3C0026E740 /* Trackable.swift */; };
+		041BB39327524F540026E740 /* ExampleTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39227524F540026E740 /* ExampleTracker.swift */; };
 		0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDB274A4C1600784A40 /* AppDelegate.swift */; };
 		0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDD274A4C1600784A40 /* SceneDelegate.swift */; };
 		0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE4274A4C1900784A40 /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		041BB389275244B40026E740 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		041BB38B275244CF0026E740 /* IAPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPError.swift; sourceTree = "<group>"; };
 		041BB38D275245160026E740 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		041BB39027524E3C0026E740 /* Trackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
+		041BB39227524F540026E740 /* ExampleTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTracker.swift; sourceTree = "<group>"; };
 		0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0432ECDB274A4C1600784A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0432ECDD274A4C1600784A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 		041BB38F27524E190026E740 /* Trackers */ = {
 			isa = PBXGroup;
 			children = (
+				041BB39027524E3C0026E740 /* Trackable.swift */,
+				041BB39227524F540026E740 /* ExampleTracker.swift */,
 			);
 			path = Trackers;
 			sourceTree = "<group>";
@@ -809,6 +815,7 @@
 				0433E8F1274C187300DAD1BB /* Color+Extensions.swift in Sources */,
 				0433E8FA274C1F7200DAD1BB /* StaticFile.swift in Sources */,
 				0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */,
+				041BB39327524F540026E740 /* ExampleTracker.swift in Sources */,
 				0433E8F4274C18EE00DAD1BB /* String+Extensions.swift in Sources */,
 				0432ED1B274A527400784A40 /* UserDefaults.swift in Sources */,
 				0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */,
@@ -828,6 +835,7 @@
 				0433E90C274E232600DAD1BB /* Deeplink.swift in Sources */,
 				0433E8FD274C211A00DAD1BB /* Player.swift in Sources */,
 				0433E8F6274C1B1200DAD1BB /* Date+Extensions.swift in Sources */,
+				041BB39127524E3C0026E740 /* Trackable.swift in Sources */,
 				0432ED36274A54E200784A40 /* Interceptor+Credential+Builder.swift in Sources */,
 				0433E8FF274C3C9000DAD1BB /* Remote+Player.swift in Sources */,
 				0432ED56274BC39C00784A40 /* ExampleViewModel.swift in Sources */,
