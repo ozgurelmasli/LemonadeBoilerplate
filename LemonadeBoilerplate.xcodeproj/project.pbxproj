@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006A6A677C979849737681E /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6024B84ED4C1662B8FFA1430 /* Pods_LemonadeBoilerplate.framework */; };
 		041BB38A275244B40026E740 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB389275244B40026E740 /* Product.swift */; };
 		041BB38C275244CF0026E740 /* IAPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38B275244CF0026E740 /* IAPError.swift */; };
-		041BB38E275245160026E740 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38D275245160026E740 /* Request.swift */; };
+		041BB38E275245160026E740 /* IAPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38D275245160026E740 /* IAPRequest.swift */; };
 		041BB39127524E3C0026E740 /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39027524E3C0026E740 /* Trackable.swift */; };
 		041BB39327524F540026E740 /* ExampleTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39227524F540026E740 /* ExampleTracker.swift */; };
 		0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDB274A4C1600784A40 /* AppDelegate.swift */; };
 		0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDD274A4C1600784A40 /* SceneDelegate.swift */; };
 		0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE4274A4C1900784A40 /* Assets.xcassets */; };
-		0432ECE8274A4C1900784A40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE6274A4C1900784A40 /* LaunchScreen.storyboard */; };
 		0432ECF3274A4C1900784A40 /* LemonadeBoilerplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECF2274A4C1900784A40 /* LemonadeBoilerplateTests.swift */; };
 		0432ECFD274A4C1900784A40 /* LemonadeBoilerplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECFC274A4C1900784A40 /* LemonadeBoilerplateUITests.swift */; };
 		0432ECFF274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECFE274A4C1900784A40 /* LemonadeBoilerplateUITestsLaunchTests.swift */; };
@@ -66,9 +66,8 @@
 		0433E910274E289700DAD1BB /* ShortCutParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E90F274E289700DAD1BB /* ShortCutParser.swift */; };
 		0433E912274E2EFF00DAD1BB /* Notification+Center+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */; };
 		0447773F274FA86B000BED78 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447773E274FA86B000BED78 /* IAPHelper.swift */; };
-		307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */; };
-		4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
-		DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */; };
+		51A3AF2ACA24ABBAEF333936 /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0270AF5CB43A3B631D5D9F3B /* Pods_LemonadeBoilerplateTests.framework */; };
+		DD059F7E19690302BBDA7F77 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326A3B8F6BA713349FE9D0DD /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,10 +88,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B42AD09365CA37216D22E2 /* Pods-LemonadeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		0270AF5CB43A3B631D5D9F3B /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		041BB389275244B40026E740 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		041BB38B275244CF0026E740 /* IAPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPError.swift; sourceTree = "<group>"; };
-		041BB38D275245160026E740 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		041BB38D275245160026E740 /* IAPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPRequest.swift; sourceTree = "<group>"; };
 		041BB39027524E3C0026E740 /* Trackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
 		041BB39227524F540026E740 /* ExampleTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTracker.swift; sourceTree = "<group>"; };
 		0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,14 +152,14 @@
 		0433E90F274E289700DAD1BB /* ShortCutParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutParser.swift; sourceTree = "<group>"; };
 		0433E911274E2EFF00DAD1BB /* Notification+Center+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Center+Extensions.swift"; sourceTree = "<group>"; };
 		0447773E274FA86B000BED78 /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD2A5EE4F2A7976B7CD0E2C2 /* Pods-LemonadeBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
-		E49EE0D4B9DAC8C05054666F /* Pods-LemonadeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
-		F82BE5D691B62DF61582EC8B /* Pods-LemonadeBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3209FB6E701CFDF7B1D5B8ED /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		326A3B8F6BA713349FE9D0DD /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38252F8396ED0C3DD81A89BE /* Pods-LemonadeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		415B196E9EDD3E45C208F315 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F5183EB791C99FE4AD74B61 /* Pods-LemonadeBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
+		6024B84ED4C1662B8FFA1430 /* Pods_LemonadeBoilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		899C102AC7B5496D79A9F7A3 /* Pods-LemonadeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		FB8679FBBE76B5AEB61A3AA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				307631026DA635C095FB4D4C /* Pods_LemonadeBoilerplate.framework in Frameworks */,
+				0006A6A677C979849737681E /* Pods_LemonadeBoilerplate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF98EEB1D4BDC628C0EA7A5A /* Pods_LemonadeBoilerplateTests.framework in Frameworks */,
+				51A3AF2ACA24ABBAEF333936 /* Pods_LemonadeBoilerplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C581BF79EE0D462E2C740A9 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */,
+				DD059F7E19690302BBDA7F77 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +193,12 @@
 		024936A318917633EB5E6F48 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD2A5EE4F2A7976B7CD0E2C2 /* Pods-LemonadeBoilerplate.debug.xcconfig */,
-				E49EE0D4B9DAC8C05054666F /* Pods-LemonadeBoilerplate.release.xcconfig */,
-				5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */,
-				59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */,
-				F82BE5D691B62DF61582EC8B /* Pods-LemonadeBoilerplateTests.debug.xcconfig */,
-				03B42AD09365CA37216D22E2 /* Pods-LemonadeBoilerplateTests.release.xcconfig */,
+				5F5183EB791C99FE4AD74B61 /* Pods-LemonadeBoilerplate.debug.xcconfig */,
+				899C102AC7B5496D79A9F7A3 /* Pods-LemonadeBoilerplate.release.xcconfig */,
+				3209FB6E701CFDF7B1D5B8ED /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */,
+				415B196E9EDD3E45C208F315 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */,
+				FB8679FBBE76B5AEB61A3AA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */,
+				38252F8396ED0C3DD81A89BE /* Pods-LemonadeBoilerplateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,7 +220,7 @@
 				0432ECFB274A4C1900784A40 /* LemonadeBoilerplateUITests */,
 				0432ECD9274A4C1600784A40 /* Products */,
 				024936A318917633EB5E6F48 /* Pods */,
-				FA822091DF06A726BADE105F /* Frameworks */,
+				5D6DE434BEA7CF5F71006604 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -518,17 +517,17 @@
 				0447773E274FA86B000BED78 /* IAPHelper.swift */,
 				041BB389275244B40026E740 /* Product.swift */,
 				041BB38B275244CF0026E740 /* IAPError.swift */,
-				041BB38D275245160026E740 /* Request.swift */,
+				041BB38D275245160026E740 /* IAPRequest.swift */,
 			);
 			path = IAP;
 			sourceTree = "<group>";
 		};
-		FA822091DF06A726BADE105F /* Frameworks */ = {
+		5D6DE434BEA7CF5F71006604 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A98C237679CDED3CBD178282 /* Pods_LemonadeBoilerplate.framework */,
-				7DE1A3B4C79BDA4C81218384 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */,
-				1BEBCA183F5BBF6D390E54B1 /* Pods_LemonadeBoilerplateTests.framework */,
+				6024B84ED4C1662B8FFA1430 /* Pods_LemonadeBoilerplate.framework */,
+				326A3B8F6BA713349FE9D0DD /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */,
+				0270AF5CB43A3B631D5D9F3B /* Pods_LemonadeBoilerplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -540,12 +539,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0432ED02274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplate" */;
 			buildPhases = (
-				5E72F35AD992E7F5401E92D7 /* [CP] Check Pods Manifest.lock */,
+				59F97565FBFD1BD2B08A3E9F /* [CP] Check Pods Manifest.lock */,
 				0447773B274F7BE1000BED78 /* SwiftLint */,
 				0432ECD4274A4C1600784A40 /* Sources */,
 				0432ECD5274A4C1600784A40 /* Frameworks */,
 				0432ECD6274A4C1600784A40 /* Resources */,
-				37C5C85D633EC08207E18BCE /* [CP] Embed Pods Frameworks */,
+				9F890A8C0E2724B99B32D1DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -560,7 +559,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0432ED05274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateTests" */;
 			buildPhases = (
-				036FB2346CBE286AFE1103C0 /* [CP] Check Pods Manifest.lock */,
+				1F337439E504068E9500A220 /* [CP] Check Pods Manifest.lock */,
 				0432ECEA274A4C1900784A40 /* Sources */,
 				0432ECEB274A4C1900784A40 /* Frameworks */,
 				0432ECEC274A4C1900784A40 /* Resources */,
@@ -579,11 +578,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0432ED08274A4C1900784A40 /* Build configuration list for PBXNativeTarget "LemonadeBoilerplateUITests" */;
 			buildPhases = (
-				565777D55139FAC63E45B2B5 /* [CP] Check Pods Manifest.lock */,
+				85F0F5A18F5AAF9640BD2220 /* [CP] Check Pods Manifest.lock */,
 				0432ECF4274A4C1900784A40 /* Sources */,
 				0432ECF5274A4C1900784A40 /* Frameworks */,
 				0432ECF6274A4C1900784A40 /* Resources */,
-				4BBEAD1C903FB7257C438FB8 /* [CP] Embed Pods Frameworks */,
+				3608406670D004E2A3135B81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -643,7 +642,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0432ECE8274A4C1900784A40 /* LaunchScreen.storyboard in Resources */,
 				0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +663,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		036FB2346CBE286AFE1103C0 /* [CP] Check Pods Manifest.lock */ = {
+		0447773B274F7BE1000BED78 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		1F337439E504068E9500A220 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -687,42 +703,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0447773B274F7BE1000BED78 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		37C5C85D633EC08207E18BCE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BBEAD1C903FB7257C438FB8 /* [CP] Embed Pods Frameworks */ = {
+		3608406670D004E2A3135B81 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -739,29 +720,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		565777D55139FAC63E45B2B5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E72F35AD992E7F5401E92D7 /* [CP] Check Pods Manifest.lock */ = {
+		59F97565FBFD1BD2B08A3E9F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -783,6 +742,45 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		85F0F5A18F5AAF9640BD2220 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F890A8C0E2724B99B32D1DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -791,7 +789,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0432ED31274A546800784A40 /* Request+Error.swift in Sources */,
-				041BB38E275245160026E740 /* Request.swift in Sources */,
+				041BB38E275245160026E740 /* IAPRequest.swift in Sources */,
 				041BB38C275244CF0026E740 /* IAPError.swift in Sources */,
 				0432ED4D274BA17B00784A40 /* ViewModelErrorAction.swift in Sources */,
 				0433E8E9274BD45800DAD1BB /* Font+Extensions.swift in Sources */,
@@ -1009,7 +1007,7 @@
 		};
 		0432ED03274A4C1900784A40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD2A5EE4F2A7976B7CD0E2C2 /* Pods-LemonadeBoilerplate.debug.xcconfig */;
+			baseConfigurationReference = 5F5183EB791C99FE4AD74B61 /* Pods-LemonadeBoilerplate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1037,7 +1035,7 @@
 		};
 		0432ED04274A4C1900784A40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E49EE0D4B9DAC8C05054666F /* Pods-LemonadeBoilerplate.release.xcconfig */;
+			baseConfigurationReference = 899C102AC7B5496D79A9F7A3 /* Pods-LemonadeBoilerplate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1065,7 +1063,7 @@
 		};
 		0432ED06274A4C1900784A40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82BE5D691B62DF61582EC8B /* Pods-LemonadeBoilerplateTests.debug.xcconfig */;
+			baseConfigurationReference = FB8679FBBE76B5AEB61A3AA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1091,7 +1089,7 @@
 		};
 		0432ED07274A4C1900784A40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03B42AD09365CA37216D22E2 /* Pods-LemonadeBoilerplateTests.release.xcconfig */;
+			baseConfigurationReference = 38252F8396ED0C3DD81A89BE /* Pods-LemonadeBoilerplateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1117,7 +1115,7 @@
 		};
 		0432ED09274A4C1900784A40 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5085506D0DA251A7CCA7E796 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */;
+			baseConfigurationReference = 3209FB6E701CFDF7B1D5B8ED /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1141,7 +1139,7 @@
 		};
 		0432ED0A274A4C1900784A40 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59BBD03910F7BEA3CEBC76F8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */;
+			baseConfigurationReference = 415B196E9EDD3E45C208F315 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -4,13 +4,9 @@
 //
 //  Created by Mac on 27.11.2021.
 //
-
-
-enum IAPService : ServiceRequest {
+enum IAPService: ServiceRequest {
     var credential: RequestCredentials {
-        return .init(method: .post
-                     , header: nil
-                     , body: nil)
+        return .init(method: .post, header: nil, body: nil)
     }
     case purchase
     
@@ -26,7 +22,7 @@ enum IAPService : ServiceRequest {
         return .purchaseService
     }
     
-    var error: RequestErrorProtocol? {
+    var error: RequestErrorProtocol? {
         return nil
     }
 }

@@ -4,7 +4,7 @@
 //
 //  Created by Mac on 27.11.2021.
 //
-
+import Foundation
 
 enum ProductType: Identifiable {
     case subscription

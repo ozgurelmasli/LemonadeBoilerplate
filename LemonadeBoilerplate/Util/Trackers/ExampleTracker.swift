@@ -5,7 +5,7 @@
 //  Created by Mac on 27.11.2021.
 //
 
-enum ExampleTracker : Trackable {
+enum ExampleTracker: Trackable {
     case exampleTrackAction
     
     var identifier: String {

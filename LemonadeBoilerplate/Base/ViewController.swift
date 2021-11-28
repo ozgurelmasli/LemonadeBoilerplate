@@ -14,7 +14,7 @@ protocol ViewController: AnyObject {
     func alertDoneAction()
 }
 
-class BaseViewController<VM : ViewModel, V : UIView>: UIViewController, ViewController {
+class BaseViewController<VM: ViewModel, V: UIView>: UIViewController, ViewController {
     /// Override this function if you want to give new operation when cancel button tapped in error state
     func alertCancelAction() { }
     func alertDoneAction() { }

@@ -6,14 +6,14 @@
 //
 
 protocol Trackable {
-    var identifier : String { get }
-    var params : [String : Any] { get }
-    var services : [TrackerService] { get }
+    var identifier: String { get }
+    var params: [String: Any] { get }
+    var services: [TrackerService] { get }
     
     func track()
 }
 extension Trackable {
-    func track(){
+    func track() {
         for service in services {
             switch service {
             case .firebase:
@@ -25,10 +25,6 @@ extension Trackable {
         }
     }
 }
-
-
-
-
 enum TrackerService {
     case firebase
     case mixPanel
