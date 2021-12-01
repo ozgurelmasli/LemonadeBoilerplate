@@ -1,0 +1,6 @@
+framework module Pods_LemonadeBoilerplate {
+  umbrella header "Pods-LemonadeBoilerplate-umbrella.h"
+
+  export *
+  module * { export * }
+}

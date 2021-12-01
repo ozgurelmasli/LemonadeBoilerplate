@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.4)
+  - LemonadeUI (0.1.16)
+
+DEPENDENCIES:
+  - Alamofire
+  - LemonadeUI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - LemonadeUI
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  LemonadeUI: 71d8966b708d638e0c6b37a9ed769c97be2784c3
+
+PODFILE CHECKSUM: e31d748152b370e9d98fbf86eb58eb2fbaaa1cc0
+
+COCOAPODS: 1.11.2

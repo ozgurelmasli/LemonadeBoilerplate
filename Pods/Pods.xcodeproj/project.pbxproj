@@ -1,0 +1,1507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4286C7290F077FC8145E45D7713606C /* HTTPMethod.swift */; };
+		02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88223F1B38DB3ADBFDDA93ECDC6DA36 /* Protected.swift */; };
+		03446D1A736C64A6584362E3871C9A81 /* Pods-LemonadeBoilerplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 712E6A882D46D5F7201E844C12826E99 /* Pods-LemonadeBoilerplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0259D6D9DC66A22C79AB1857D4071C /* Lemonade+Flower+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763D2081B44AA8DBBB539E68A59501D /* Lemonade+Flower+Config.swift */; };
+		0B2EDFE781A5D8011B8072ED2FEEC822 /* CGFloat+Constraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B39AC677F8143F7D2F71ADD08603A8 /* CGFloat+Constraint+Extensions.swift */; };
+		0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D35DC835E7F8D45EF167F4E9880EC7 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EC4C535A152EA14F67C63F2D7D2B66D /* LemonadeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB405B18B6BEE10AAA6BF5D0EBDE1E6D /* LemonadeButton.swift */; };
+		1223F8821A3EC4F9DB2CFDDA3DF5456D /* Lemonade+Bar+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A1178758C8B216078DB8545064F826 /* Lemonade+Bar+Alert.swift */; };
+		13E62623092B680C6A5C349D48B8A4FD /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ABDD358D1E4A86280E61B8D7509D65 /* CachedResponseHandler.swift */; };
+		1773084DECF68CADD45567FBEC56036D /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5FF986B2CF8A13D65CF5ADA6CF292B /* Alamofire-dummy.m */; };
+		1835AFDBE6ACE216C89634A971C5038C /* Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81811810A934C4750D6A26F062D61E /* Lemonade+Cell.swift */; };
+		1A33109CFDDD2B0B3A1D7377676A78F7 /* LemonadeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAFC37C44D592D3A2F61DF81027AC58 /* LemonadeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D17B83410DC98911D539F2BD5254C05 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBBC4F31B992446BB57CC70FA28297 /* RequestTaskMap.swift */; };
+		21C6A8017558BE3C1F97271AC2C232E6 /* Label+Tap+Gesture+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0590EDEE959E5E0BFE9C7A4E345203FE /* Label+Tap+Gesture+Extensions.swift */; };
+		24A0624813E71EB25953CC20AB872A6C /* ConstraintErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8066DA9F5F2259467E2EC6C47BDE1E /* ConstraintErrors.swift */; };
+		2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A463D906D3C2E8B09E35B1CDC8A96 /* OperationQueue+Alamofire.swift */; };
+		3097B56011C28DB8D3FF740B7CC17148 /* Default+Lemonade+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0768D89B297617D6E5FE377A0704D /* Default+Lemonade+Cell.swift */; };
+		30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AADE3733B50DF50F0941B0C67BB4CB3 /* MultipartUpload.swift */; };
+		32BB05851BA3EC7316956172578C9043 /* Lemonade+ProgressBar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F428E9308D5D7357D9BF855E102B5DB1 /* Lemonade+ProgressBar+Config.swift */; };
+		336818EB14273D9F0183099E05D1955A /* LemonadeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968D3381A7A9A0E66226E1F7E3DF59D2 /* LemonadeTextView.swift */; };
+		33F86FAB918B148A63A1575667F9B570 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
+		340F90C73A9ED8290C9722D40E14926A /* Lemonade+Slider+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33822716592C821A21305601FE249241 /* Lemonade+Slider+Config.swift */; };
+		37A1797EA60EE2DF4800B91D19D3DFDE /* Custom+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741BFB44DED5A0E586D1B66DFD36666 /* Custom+Animations.swift */; };
+		3B935FBC05F22B1D270583EDC4C6D64E /* Lemonade+Lotus+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D110808DAE8A2852AFCC0D7D4674B1D /* Lemonade+Lotus+Config.swift */; };
+		403501DF0FF001F8642595A2965DDFD5 /* Lemonade+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1E5B31F65CB9EBC49A77EA1A92C41D /* Lemonade+SearchBar.swift */; };
+		4634BA717BFCE522E5B42304C6A78B5D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC309737472EE32BFEBC72C3D46EACD9 /* ParameterEncoding.swift */; };
+		471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7196DB116458985366D48753F2CE1EA /* Notifications.swift */; };
+		491B25963EC509BA73630374720D3440 /* Lemonade+Progress+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76971B014C23F3559471753C43A0A8B /* Lemonade+Progress+Chart.swift */; };
+		512FAFBD71830F126224C033B6C45F4E /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5129ADDD24FB092DC91EFC777104B79 /* RetryPolicy.swift */; };
+		52BE6F747C26DF2A24532458E55DC10F /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BF614043ABE10E93F5A6AE21915D6 /* HTTPHeaders.swift */; };
+		59A3DD450F28A3503244AFD530229612 /* Lemonade+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61286FEB3269F865927ED5437A4354 /* Lemonade+CollectionView.swift */; };
+		5AC4CCB988CE4C36941DFD9C19A7007D /* Lemonade+Alert+Diolog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0148F5029CF2C9C5602BC072E296D270 /* Lemonade+Alert+Diolog.swift */; };
+		5C0B6A2A6F0BE04D2D93F8FF79FFC2A9 /* Lemonade+Line+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125AEB6FBD0B3DE11634CDE77A4434B5 /* Lemonade+Line+Chart+Config.swift */; };
+		5C58DF84AED44EE435C326BF3EBFF8ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		5E594FA3290D3D70F500572D0AC100DB /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2A8E67F79CFBD2391D922E598B267 /* URLConvertible+URLRequestConvertible.swift */; };
+		5F476AED7EE60FD1D813512B0EBCE3E9 /* Lemonade+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A69E2AE055FE416BBF5C8BD58773F56 /* Lemonade+Alert.swift */; };
+		601D47BB5F64496011C3967EEA316BA2 /* Lemonade+Segment+Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CB3ED2DA414B3A39AF6914F85D7F22 /* Lemonade+Segment+Control.swift */; };
+		608F03227C8DA8B85FFF6B4D853CDCB3 /* Config+Lemonade+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C160CA8F163854134ED7C057C570455 /* Config+Lemonade+Button.swift */; };
+		635D3E52443677A0BC72FA0016F53DA0 /* Lemonade+Progress+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4903FBB892192683A1AA3632853A520B /* Lemonade+Progress+Chart+Config.swift */; };
+		65720C9FE181BBDF45648203D075FBA3 /* Custom+Basic+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B9B1DB4C65656AC06453EEFA2D738 /* Custom+Basic+Animations.swift */; };
+		679D35A593FDC3AC3EB2E9D760CF2EE1 /* Lemonade+ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6274BAC83108D2F6D9128205841D6 /* Lemonade+ProgressBar.swift */; };
+		688337B18659C4BF722F87AFC4FEEF81 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B47AF0EEAFACF40EAFF6C724A0DB436 /* SessionDelegate.swift */; };
+		6CADC5F31F2DB587D68A042C2E2B5EBC /* Pods-LemonadeBoilerplateTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03387C4297CE15484B92A36AC966EDF4 /* Pods-LemonadeBoilerplateTests-dummy.m */; };
+		6CFFE397739405574932D874876D5CBA /* ConfigUI+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8911E3BAFB61161734972DE6B69F266F /* ConfigUI+View.swift */; };
+		6DFCC713BE039AF36A6B21CD8E2D66D9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D6322E48C1311AB435202ED4E53780 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m */; };
+		7254587FB28616F30C79B0643BA71D3A /* Common+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE611648A3FC0464E7F706DA05418CF /* Common+View+Extensions.swift */; };
+		75DA6604710E99EFE75F3D60CB1D9B49 /* LemonadePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484AE41C494D33C9D2E18CE8EA02395E /* LemonadePadding.swift */; };
+		7818CE28509DFCFF7F6BEDE4BACCC938 /* Lemonade+Alert+Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E743EE1A91E28E6B952DB3BD3C4667 /* Lemonade+Alert+Configs.swift */; };
+		7A03A26D78E3F57CC4121DE822884290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		8143F6A01DE43A54571BD74E37C88B5F /* Lemonade+Line+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7354A0A25DC0065530F84D020DF9A49 /* Lemonade+Line+Chart.swift */; };
+		843B9E49CD7F2E8143F68CF22D18BC24 /* Lemonade+Segment+Control+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEDD89C7776C6AD298754AB31B0E85C /* Lemonade+Segment+Control+Protocol.swift */; };
+		8764233A7F510ED1E6D6C1BD7FC6BD29 /* Pods-LemonadeBoilerplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9885B559D44618DA5F5D26E43681B0 /* Pods-LemonadeBoilerplate-dummy.m */; };
+		8A0B00F751751B5F64CF477AC01C464F /* LemonadeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC202E8871B0B1C32BD980E992BBEEF /* LemonadeUI-dummy.m */; };
+		8B984154E8A5CC992BB6EAB8D001165D /* Lemonade+CollectionView+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E181A7F83FA74D841C4504C62CD688D /* Lemonade+CollectionView+DataSource.swift */; };
+		8B9CDBE3FFD712120CD66DD8B06C44E4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3F934DFA359989CD90B9CA2738624 /* ParameterEncoder.swift */; };
+		8F9E1EEF2FE52E3231A769722D5C4148 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F3264CD697086AE4805465616D5C7 /* ServerTrustEvaluation.swift */; };
+		925A1A9CA65BC9F6E11076ACCFFB3F28 /* Config+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453A5775BFAC9659C15454CCD370E16 /* Config+Animation.swift */; };
+		941822CDF68EB8F4D49F150457A82616 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A577C0F8D0DBAE0C5CEF655DC6655ED /* ResponseSerialization.swift */; };
+		97584BC08D2B494417BDEE268CFF38C9 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86E7C2C4D5F1E630F0E10CC04E3C81E /* Combine.swift */; };
+		9C0BE8FA0030B2BC1DF7C159FA059389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		9C29A4811780734A0B4481E54AD0C77C /* Custom+View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA650AA8E2557233DE1D22E92AF6186 /* Custom+View+Extensions.swift */; };
+		9CFDA7C92E0EEA31F709663B0E727ABA /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5848404356B7FF235B604961C64690 /* EventMonitor.swift */; };
+		A1DD764543530FA7724E252FEE6FB92D /* Lemonade+Segment+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB752223DD181F9DA2F7F67754870363 /* Lemonade+Segment+Item.swift */; };
+		A3153333FC136836B0028E6AB2A56BEE /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD5C968D65E9D9B1AE8F237E3B1F13D /* AlamofireExtended.swift */; };
+		A35D474968015E33BF4382842537C452 /* Lemonade+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5056AC371804586CAB3E45E9C2F3B63 /* Lemonade+ScrollView.swift */; };
+		A391506D443401B3FF8CA9D95BE857D4 /* Lemonade+Pie+Chart+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B42D901CE3DC59000CECE50AA91C4BA /* Lemonade+Pie+Chart+Config.swift */; };
+		A4F1202CE5BBE79F3BBCAE3D2B16BC03 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DE4E6D11B3411203B5920E72C619F2 /* Result+Alamofire.swift */; };
+		A664924D6CCE2922A3F81EC932F4D476 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAF10D5D59780C1AF04F8E25CADFC2 /* AFError.swift */; };
+		AB0B4231F9040113D558760371F3F056 /* Lemonade+Tooltip+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5903BB370C6DB40BE490BE8C22187C /* Lemonade+Tooltip+View.swift */; };
+		AB90F8ED41D1208CAE40730876C878E7 /* Lemonade+SearchBar+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52DDDFFB863A597984490BD3F05DFCF /* Lemonade+SearchBar+Config.swift */; };
+		AC1EF979527CDDA1174A4793581DA95F /* Lemonade+ToolTip+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07ABEE931595BD754C0E968A1895AB2 /* Lemonade+ToolTip+Config.swift */; };
+		B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1947B9E487DBA7E5488F07D5AFCD02B8 /* NetworkReachabilityManager.swift */; };
+		B720ED44B2E7A6D41F10C14DC96C8CB4 /* Lemonade+Pie+Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776F572FDAC77B743575F7BDAB22F470 /* Lemonade+Pie+Chart.swift */; };
+		B89D1C69742F61878115334A1D2DFFE7 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57585DE0977D26E91DA81CB5FD73EEEE /* URLRequest+Alamofire.swift */; };
+		BD34B75513CAAE913BC42E3391A9D88B /* Lemonade+Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBCAA876532EF7E9EAA329B1B0664A3 /* Lemonade+Flower.swift */; };
+		C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AABDFF525F096394FFC04ADE062072 /* MultipartFormData.swift */; };
+		C234BAAB04DF383984639A79A5F9B315 /* Lemonade+Segment+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6679CA1CF5772337164D04894E2F1293 /* Lemonade+Segment+Config.swift */; };
+		C5F2460910A8818A7A24D4774C511380 /* Pods-LemonadeBoilerplateTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE1AA5D55B2056B5D1830883FC4B3EC /* Pods-LemonadeBoilerplateTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F66519CE6148F21D7DB11423F1D34D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D70BE0C42E0A2D9F48D6E5824D520 /* Response.swift */; };
+		CE174667DD89C949E1EBEE7F3A78C7AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		CE7A840DEEF380B11789161774C49541 /* LemonadeConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51BBED2B67B1EEE19EB837CB8A60048 /* LemonadeConstraint.swift */; };
+		D0C1C9BD4BA0A776EAAA2590D253B8D3 /* Animation+View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5785DCB605B1D8662542006B7384387 /* Animation+View+Extension.swift */; };
+		D15FEA31AA9625BBF041FB91E48A9995 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D3E34825305AEAA607821A4C9E4650 /* Validation.swift */; };
+		DCD0C33A2B50811D53CF68F021284B47 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B92FAF9B7AE32780E70DE81A2E682BB /* DispatchQueue+Alamofire.swift */; };
+		DD58A00EACBEE274C381B491519C6B8C /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F89A2A76C2CB239DF487E8785F132 /* RedirectHandler.swift */; };
+		DD95E8B6F81720E178CE4AF6AD7991D0 /* Config+Lemonade+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3473F5FF5E595CB0D5388AFE5BE0CE /* Config+Lemonade+Label.swift */; };
+		DE7006C2A8BD630857EFFA6F7A70D143 /* WrapContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99D0FAA244287E24E0CA373483E2A8 /* WrapContent.swift */; };
+		E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458D884503F9BFC1E5D2E6CE5B988B9A /* Request.swift */; };
+		E1769C267E82B0C24FE0FFBF949F0A6E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEC6BB890D6F3AA0187AF570C234C6 /* StringEncoding+Alamofire.swift */; };
+		E2913A317EE6B1EA0100297F3A6CEECB /* Lemonade+Lotus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48C36B9EC1E60A5E2DCA82D8FE95F0 /* Lemonade+Lotus.swift */; };
+		E3D830B5987A91060A3AD2E24ABFD3E5 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 272F2EB4097C20198AF82DBC78974867 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4A1C0549A8EB311305B32F8E835FB63 /* Lemonade+Labelled+Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FF9A16F409A6F3E4C1FB02DF69DB75 /* Lemonade+Labelled+Input.swift */; };
+		E857ADCAD7B647883D5B2AEC3F16D1D5 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3908FEB5C287C9CCA4A99969FB16AE1 /* URLSessionConfiguration+Alamofire.swift */; };
+		EB3243992530587E4C7CD5D1A31647F0 /* LemonadeConstraint+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0124F3FAC5A5869CD2FEC470F11438C /* LemonadeConstraint+View.swift */; };
+		EC11B17DA78F7EEBEBC3EFAF68C6DF9F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4414EE53E45038C56E1D18E416BA89A2 /* Session.swift */; };
+		EE0F5988DCFDF4AD056053717BE900A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		F264445D1CDF1D6AE39CA7432065C99D /* Lemonade+Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56051DDA320A0F7525DCCE0D69877FAE /* Lemonade+Slider.swift */; };
+		F36D96A4346C90A2D11CB3B6A2ECF4CF /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0B20EDB6DB2041810F5AAC1A10CB1B /* AuthenticationInterceptor.swift */; };
+		F396D5BDB2DC6DEFDF47646312DB8A3B /* LemonadeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97ACFD0AF0781327B0E2E8A4D8D9185 /* LemonadeLabel.swift */; };
+		F5C461442360410ECB2AF86CCA12BDC8 /* LemonadeTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215745AFEC30AD30453979905276B3F2 /* LemonadeTextfield.swift */; };
+		F5D2A31C7EB1DE010771140B6E7ABAD8 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8EC0F1D4B311BAA01FB6F6E2FB2A2 /* URLEncodedFormEncoder.swift */; };
+		F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F846AF614560D8FA23043025768B1 /* RequestInterceptor.swift */; };
+		FEDBAD32E2EDA85AD6E362B82892A74A /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454EF0E0BAC2A81222B3DD5E4ADCC981 /* Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EA47336E0B6DD1D2A9CCAE62890FA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		62BE30FD27951DEFC2952E247C1D35F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47FA841A180F9AFD64C4981BAFDA12D1;
+			remoteInfo = "Pods-LemonadeBoilerplate";
+		};
+		773AE31921B44663DD288CA33AAF9DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F941C36BD21460E6C270100FEB4C76;
+			remoteInfo = LemonadeUI;
+		};
+		8C0EDF0B92F5F8E13BA750D42D3EDEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8F941C36BD21460E6C270100FEB4C76;
+			remoteInfo = LemonadeUI;
+		};
+		A0F6774CE49A34B82175DB61ED4173DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0148F5029CF2C9C5602BC072E296D270 /* Lemonade+Alert+Diolog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Alert+Diolog.swift"; path = "Sources/UIItems/Alert/Alerts/Lemonade+Alert+Diolog.swift"; sourceTree = "<group>"; };
+		03387C4297CE15484B92A36AC966EDF4 /* Pods-LemonadeBoilerplateTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LemonadeBoilerplateTests-dummy.m"; sourceTree = "<group>"; };
+		03B39AC677F8143F7D2F71ADD08603A8 /* CGFloat+Constraint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Constraint+Extensions.swift"; path = "Sources/Constaints/CGFloat+Constraint+Extensions.swift"; sourceTree = "<group>"; };
+		0590EDEE959E5E0BFE9C7A4E345203FE /* Label+Tap+Gesture+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Label+Tap+Gesture+Extensions.swift"; path = "Sources/UIItems/Label/Label+Tap+Gesture+Extensions.swift"; sourceTree = "<group>"; };
+		0AADE3733B50DF50F0941B0C67BB4CB3 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		0DE97ABBEC6D63925628D700BE7DC570 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		125AEB6FBD0B3DE11634CDE77A4434B5 /* Lemonade+Line+Chart+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Line+Chart+Config.swift"; path = "Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart+Config.swift"; sourceTree = "<group>"; };
+		140616D04651C0439DDD36ECA4D18DDC /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		1947B9E487DBA7E5488F07D5AFCD02B8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		1B42D901CE3DC59000CECE50AA91C4BA /* Lemonade+Pie+Chart+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Pie+Chart+Config.swift"; path = "Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart+Config.swift"; sourceTree = "<group>"; };
+		1C160CA8F163854134ED7C057C570455 /* Config+Lemonade+Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Config+Lemonade+Button.swift"; path = "Sources/UIItems/Button/Config+Lemonade+Button.swift"; sourceTree = "<group>"; };
+		1D8929538AEB68CC222E67DFCEAA6C98 /* Pods-LemonadeBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
+		215745AFEC30AD30453979905276B3F2 /* LemonadeTextfield.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadeTextfield.swift; path = Sources/UIItems/Input/Textfield/LemonadeTextfield.swift; sourceTree = "<group>"; };
+		23F0768D89B297617D6E5FE377A0704D /* Default+Lemonade+Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Default+Lemonade+Cell.swift"; path = "Sources/UIItems/CollectionView/Lemonade+Cells/CustomCells/Default+Lemonade+Cell.swift"; sourceTree = "<group>"; };
+		24CB3ED2DA414B3A39AF6914F85D7F22 /* Lemonade+Segment+Control.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Segment+Control.swift"; path = "Sources/UIItems/SegmentControl/Lemonade+Segment+Control.swift"; sourceTree = "<group>"; };
+		2646B1206AFA6E5B03F02FCBA3E3907C /* LemonadeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LemonadeUI.release.xcconfig; sourceTree = "<group>"; };
+		272F2EB4097C20198AF82DBC78974867 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h"; sourceTree = "<group>"; };
+		28ABDD358D1E4A86280E61B8D7509D65 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		29C32C8608F3B42A931CA494FFEF2B49 /* LemonadeUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LemonadeUI-Info.plist"; sourceTree = "<group>"; };
+		29D6322E48C1311AB435202ED4E53780 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m"; sourceTree = "<group>"; };
+		2A81811810A934C4750D6A26F062D61E /* Lemonade+Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Cell.swift"; path = "Sources/UIItems/CollectionView/Lemonade+Cells/Lemonade+Cell.swift"; sourceTree = "<group>"; };
+		30BEC6BB890D6F3AA0187AF570C234C6 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		33822716592C821A21305601FE249241 /* Lemonade+Slider+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Slider+Config.swift"; path = "Sources/UIItems/Slider/Lemonade+Slider+Config.swift"; sourceTree = "<group>"; };
+		3453A5775BFAC9659C15454CCD370E16 /* Config+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Config+Animation.swift"; path = "Sources/Animations/Config+Animation.swift"; sourceTree = "<group>"; };
+		39D3E34825305AEAA607821A4C9E4650 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		3BBCAA876532EF7E9EAA329B1B0664A3 /* Lemonade+Flower.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Flower.swift"; path = "Sources/UIItems/Flower/Lemonade+Flower.swift"; sourceTree = "<group>"; };
+		3F3473F5FF5E595CB0D5388AFE5BE0CE /* Config+Lemonade+Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Config+Lemonade+Label.swift"; path = "Sources/UIItems/Label/Config+Lemonade+Label.swift"; sourceTree = "<group>"; };
+		3F9879F95A4F7F5C8A174D32F10663DB /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		417D437EAFE88A08338DC458931A89EE /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4241B112BEFE707D64ADA9BB23E2A933 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		42FF9A16F409A6F3E4C1FB02DF69DB75 /* Lemonade+Labelled+Input.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Labelled+Input.swift"; path = "Sources/UIItems/Input/LabelledInput/Lemonade+Labelled+Input.swift"; sourceTree = "<group>"; };
+		4414EE53E45038C56E1D18E416BA89A2 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		454EF0E0BAC2A81222B3DD5E4ADCC981 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		458D884503F9BFC1E5D2E6CE5B988B9A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		46DBBC4F31B992446BB57CC70FA28297 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		484AE41C494D33C9D2E18CE8EA02395E /* LemonadePadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadePadding.swift; path = Sources/Constaints/LemonadePadding.swift; sourceTree = "<group>"; };
+		4903FBB892192683A1AA3632853A520B /* Lemonade+Progress+Chart+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Progress+Chart+Config.swift"; path = "Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart+Config.swift"; sourceTree = "<group>"; };
+		4A69E2AE055FE416BBF5C8BD58773F56 /* Lemonade+Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Alert.swift"; path = "Sources/UIItems/Alert/Lemonade+Alert.swift"; sourceTree = "<group>"; };
+		4B92FAF9B7AE32780E70DE81A2E682BB /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4EB6274BAC83108D2F6D9128205841D6 /* Lemonade+ProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+ProgressBar.swift"; path = "Sources/UIItems/ProgressBar/Lemonade+ProgressBar.swift"; sourceTree = "<group>"; };
+		50CE01BFC979A64CFBFBFF7B0B3F75C8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.modulemap"; sourceTree = "<group>"; };
+		517F3264CD697086AE4805465616D5C7 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		5410D98DCB4173FFD4741514D8332038 /* Pods-LemonadeBoilerplate-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LemonadeBoilerplate-frameworks.sh"; sourceTree = "<group>"; };
+		56051DDA320A0F7525DCCE0D69877FAE /* Lemonade+Slider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Slider.swift"; path = "Sources/UIItems/Slider/Lemonade+Slider.swift"; sourceTree = "<group>"; };
+		57585DE0977D26E91DA81CB5FD73EEEE /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		5A5A463D906D3C2E8B09E35B1CDC8A96 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		5B47AF0EEAFACF40EAFF6C724A0DB436 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE611648A3FC0464E7F706DA05418CF /* Common+View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Common+View+Extensions.swift"; path = "Sources/UIItems/View/Common+View+Extensions.swift"; sourceTree = "<group>"; };
+		5F9A20D45D6ADF629A2323A38D9EBF56 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		6679CA1CF5772337164D04894E2F1293 /* Lemonade+Segment+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Segment+Config.swift"; path = "Sources/UIItems/SegmentControl/Lemonade+Segment+Config.swift"; sourceTree = "<group>"; };
+		69BEFD713B90B81BA7EFC52A11CC03D4 /* Pods-LemonadeBoilerplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LemonadeBoilerplate.modulemap"; sourceTree = "<group>"; };
+		69FAF10D5D59780C1AF04F8E25CADFC2 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		6B7F321B5B05CD0ED1A1EAC8703C026B /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D110808DAE8A2852AFCC0D7D4674B1D /* Lemonade+Lotus+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Lotus+Config.swift"; path = "Sources/UIItems/Lotus/Lemonade+Lotus+Config.swift"; sourceTree = "<group>"; };
+		6D9B48F60B6B5CF2163886829847056A /* Pods-LemonadeBoilerplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplate-Info.plist"; sourceTree = "<group>"; };
+		712E6A882D46D5F7201E844C12826E99 /* Pods-LemonadeBoilerplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeBoilerplate-umbrella.h"; sourceTree = "<group>"; };
+		753B7BBBD4E19B00DF2F1AC423D6C40D /* LemonadeUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LemonadeUI; path = LemonadeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776F572FDAC77B743575F7BDAB22F470 /* Lemonade+Pie+Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Pie+Chart.swift"; path = "Sources/UIItems/Charts/PieChart/Lemonade+Pie+Chart.swift"; sourceTree = "<group>"; };
+		7A48C36B9EC1E60A5E2DCA82D8FE95F0 /* Lemonade+Lotus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Lotus.swift"; path = "Sources/UIItems/Lotus/Lemonade+Lotus.swift"; sourceTree = "<group>"; };
+		7A577C0F8D0DBAE0C5CEF655DC6655ED /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		7C61286FEB3269F865927ED5437A4354 /* Lemonade+CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+CollectionView.swift"; path = "Sources/UIItems/CollectionView/Lemonade+CollectionView.swift"; sourceTree = "<group>"; };
+		7D6BE37289006AA63493AC606FB3D954 /* Pods-LemonadeBoilerplateTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplateTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7DF14CC345E0DE6C2226C3A9198C1A89 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7E5FF986B2CF8A13D65CF5ADA6CF292B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		7E99D0FAA244287E24E0CA373483E2A8 /* WrapContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WrapContent.swift; path = Sources/UIItems/CollectionView/WrapContent.swift; sourceTree = "<group>"; };
+		8741BFB44DED5A0E586D1B66DFD36666 /* Custom+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Custom+Animations.swift"; path = "Sources/Animations/Custom+Animations.swift"; sourceTree = "<group>"; };
+		8911E3BAFB61161734972DE6B69F266F /* ConfigUI+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConfigUI+View.swift"; path = "Sources/UIItems/View/ConfigUI+View.swift"; sourceTree = "<group>"; };
+		89AABDFF525F096394FFC04ADE062072 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		8AF8EC0F1D4B311BAA01FB6F6E2FB2A2 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		8C85B8881065D1984E40B10E15E3E53E /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-Info.plist"; sourceTree = "<group>"; };
+		8CAFC37C44D592D3A2F61DF81027AC58 /* LemonadeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LemonadeUI-umbrella.h"; sourceTree = "<group>"; };
+		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8D5903BB370C6DB40BE490BE8C22187C /* Lemonade+Tooltip+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Tooltip+View.swift"; path = "Sources/UIItems/ToolTipView/Lemonade+Tooltip+View.swift"; sourceTree = "<group>"; };
+		8D8066DA9F5F2259467E2EC6C47BDE1E /* ConstraintErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintErrors.swift; path = Sources/Constaints/ConstraintErrors.swift; sourceTree = "<group>"; };
+		8DE1AA5D55B2056B5D1830883FC4B3EC /* Pods-LemonadeBoilerplateTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LemonadeBoilerplateTests-umbrella.h"; sourceTree = "<group>"; };
+		923B9B1DB4C65656AC06453EEFA2D738 /* Custom+Basic+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Custom+Basic+Animations.swift"; path = "Sources/Animations/Custom+Basic+Animations.swift"; sourceTree = "<group>"; };
+		968D3381A7A9A0E66226E1F7E3DF59D2 /* LemonadeTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadeTextView.swift; path = Sources/UIItems/Input/TextView/LemonadeTextView.swift; sourceTree = "<group>"; };
+		9BD2A8E67F79CFBD2391D922E598B267 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		9C9885B559D44618DA5F5D26E43681B0 /* Pods-LemonadeBoilerplate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LemonadeBoilerplate-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E181A7F83FA74D841C4504C62CD688D /* Lemonade+CollectionView+DataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+CollectionView+DataSource.swift"; path = "Sources/UIItems/CollectionView/Lemonade+CollectionView+DataSource.swift"; sourceTree = "<group>"; };
+		A6A1178758C8B216078DB8545064F826 /* Lemonade+Bar+Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Bar+Alert.swift"; path = "Sources/UIItems/Alert/Alerts/Lemonade+Bar+Alert.swift"; sourceTree = "<group>"; };
+		A763D2081B44AA8DBBB539E68A59501D /* Lemonade+Flower+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Flower+Config.swift"; path = "Sources/UIItems/Flower/Lemonade+Flower+Config.swift"; sourceTree = "<group>"; };
+		A97ACFD0AF0781327B0E2E8A4D8D9185 /* LemonadeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadeLabel.swift; path = Sources/UIItems/Label/LemonadeLabel.swift; sourceTree = "<group>"; };
+		AB405B18B6BEE10AAA6BF5D0EBDE1E6D /* LemonadeButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadeButton.swift; path = Sources/UIItems/Button/LemonadeButton.swift; sourceTree = "<group>"; };
+		AB752223DD181F9DA2F7F67754870363 /* Lemonade+Segment+Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Segment+Item.swift"; path = "Sources/UIItems/SegmentControl/Lemonade+Segment+Item.swift"; sourceTree = "<group>"; };
+		AD5BF614043ABE10E93F5A6AE21915D6 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		B0124F3FAC5A5869CD2FEC470F11438C /* LemonadeConstraint+View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LemonadeConstraint+View.swift"; path = "Sources/Constaints/LemonadeConstraint+View.swift"; sourceTree = "<group>"; };
+		B07ABEE931595BD754C0E968A1895AB2 /* Lemonade+ToolTip+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+ToolTip+Config.swift"; path = "Sources/UIItems/ToolTipView/Lemonade+ToolTip+Config.swift"; sourceTree = "<group>"; };
+		B1D3F934DFA359989CD90B9CA2738624 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		B1E0CD988EC4AAA8D4F5334A482912DE /* Pods-LemonadeBoilerplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplateTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1F24ABE4999CF740BFC4B27C2CA97F1 /* LemonadeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LemonadeUI.debug.xcconfig; sourceTree = "<group>"; };
+		B3908FEB5C287C9CCA4A99969FB16AE1 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		B4286C7290F077FC8145E45D7713606C /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		B5056AC371804586CAB3E45E9C2F3B63 /* Lemonade+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+ScrollView.swift"; path = "Sources/UIItems/ScrollView/Lemonade+ScrollView.swift"; sourceTree = "<group>"; };
+		B5129ADDD24FB092DC91EFC777104B79 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		B5785DCB605B1D8662542006B7384387 /* Animation+View+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Animation+View+Extension.swift"; path = "Sources/Animations/Animation+View+Extension.swift"; sourceTree = "<group>"; };
+		B76971B014C23F3559471753C43A0A8B /* Lemonade+Progress+Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Progress+Chart.swift"; path = "Sources/UIItems/Charts/ProgressChart/Lemonade+Progress+Chart.swift"; sourceTree = "<group>"; };
+		BA97D49265B64DC238B2A77BF1E5C1EF /* LemonadeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LemonadeUI.modulemap; sourceTree = "<group>"; };
+		BAA650AA8E2557233DE1D22E92AF6186 /* Custom+View+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Custom+View+Extensions.swift"; path = "Sources/UIItems/View/Custom+View+Extensions.swift"; sourceTree = "<group>"; };
+		BECE61B47BA2E011B4D03DCCED6B6988 /* Pods-LemonadeBoilerplateTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LemonadeBoilerplateTests"; path = Pods_LemonadeBoilerplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52DDDFFB863A597984490BD3F05DFCF /* Lemonade+SearchBar+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+SearchBar+Config.swift"; path = "Sources/UIItems/SearchBar/Lemonade+SearchBar+Config.swift"; sourceTree = "<group>"; };
+		C65F89A2A76C2CB239DF487E8785F132 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		C6E88F887EEA9AAC9736432E8765073F /* Pods-LemonadeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		C7196DB116458985366D48753F2CE1EA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		C7354A0A25DC0065530F84D020DF9A49 /* Lemonade+Line+Chart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Line+Chart.swift"; path = "Sources/UIItems/Charts/LineChart/Lemonade+Line+Chart.swift"; sourceTree = "<group>"; };
+		C747E5716A6941110D7838267B48DAA5 /* Pods-LemonadeBoilerplateTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LemonadeBoilerplateTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8A33ACAF73CD2DBF5C5DD7B0B43A66C /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests"; path = Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D35DC835E7F8D45EF167F4E9880EC7 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		CC5848404356B7FF235B604961C64690 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		CD12B1E508178604A0E0FB282208CB86 /* Pods-LemonadeBoilerplate */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LemonadeBoilerplate"; path = Pods_LemonadeBoilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDD5C968D65E9D9B1AE8F237E3B1F13D /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		D12536BD7242825FAF1AD60BAE275BD5 /* Pods-LemonadeBoilerplate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LemonadeBoilerplate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D50F846AF614560D8FA23043025768B1 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		D51BBED2B67B1EEE19EB837CB8A60048 /* LemonadeConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LemonadeConstraint.swift; path = Sources/Constaints/LemonadeConstraint.swift; sourceTree = "<group>"; };
+		D58D70BE0C42E0A2D9F48D6E5824D520 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		D687A0BD1A95E01184B5A9C491D5F49E /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		D75FD9E7D0E473FC63790F0F36BD93A9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D88223F1B38DB3ADBFDDA93ECDC6DA36 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		D8E743EE1A91E28E6B952DB3BD3C4667 /* Lemonade+Alert+Configs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Alert+Configs.swift"; path = "Sources/UIItems/Alert/Lemonade+Alert+Configs.swift"; sourceTree = "<group>"; };
+		DA9CBDD335CAC6B07DAD0D8253FA5C67 /* Pods-LemonadeBoilerplateTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplateTests-Info.plist"; sourceTree = "<group>"; };
+		DC20AF0D0B987FFE7326A3FC8DAA77D6 /* LemonadeUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LemonadeUI-prefix.pch"; sourceTree = "<group>"; };
+		E86E7C2C4D5F1E630F0E10CC04E3C81E /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		E926C84B5C3AFDE145D33E3052AD58C3 /* Pods-LemonadeBoilerplateTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LemonadeBoilerplateTests.modulemap"; sourceTree = "<group>"; };
+		E9DE4E6D11B3411203B5920E72C619F2 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		EF0435AF3F2BA17AF3A9F6A7C540DDA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LemonadeBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F428E9308D5D7357D9BF855E102B5DB1 /* Lemonade+ProgressBar+Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+ProgressBar+Config.swift"; path = "Sources/UIItems/ProgressBar/Lemonade+ProgressBar+Config.swift"; sourceTree = "<group>"; };
+		FA0B20EDB6DB2041810F5AAC1A10CB1B /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		FAC202E8871B0B1C32BD980E992BBEEF /* LemonadeUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LemonadeUI-dummy.m"; sourceTree = "<group>"; };
+		FB1E5B31F65CB9EBC49A77EA1A92C41D /* Lemonade+SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+SearchBar.swift"; path = "Sources/UIItems/SearchBar/Lemonade+SearchBar.swift"; sourceTree = "<group>"; };
+		FC309737472EE32BFEBC72C3D46EACD9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FDEDD89C7776C6AD298754AB31B0E85C /* Lemonade+Segment+Control+Protocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Lemonade+Segment+Control+Protocol.swift"; path = "Sources/UIItems/SegmentControl/Lemonade+Segment+Control+Protocol.swift"; sourceTree = "<group>"; };
+		FEACC5289F4E794DBBBFEDD23851124A /* Pods-LemonadeBoilerplate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LemonadeBoilerplate-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B11DF7FB0DA3133890D1244D04A7396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A03A26D78E3F57CC4121DE822884290 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39D530C2A3085A1033683EC9AE0BC313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F86FAB918B148A63A1575667F9B570 /* CFNetwork.framework in Frameworks */,
+				9C0BE8FA0030B2BC1DF7C159FA059389 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C7A2CF19EE05820A5F4F4E6173FDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE174667DD89C949E1EBEE7F3A78C7AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		876530D197C1CECF980ADDCA61785600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C58DF84AED44EE435C326BF3EBFF8ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9CA15CA4A9D130C500E31F0AF70BC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0F5988DCFDF4AD056053717BE900A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		277E332A2494C5537767EB781C0AC6DC /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				69FAF10D5D59780C1AF04F8E25CADFC2 /* AFError.swift */,
+				454EF0E0BAC2A81222B3DD5E4ADCC981 /* Alamofire.swift */,
+				CDD5C968D65E9D9B1AE8F237E3B1F13D /* AlamofireExtended.swift */,
+				FA0B20EDB6DB2041810F5AAC1A10CB1B /* AuthenticationInterceptor.swift */,
+				28ABDD358D1E4A86280E61B8D7509D65 /* CachedResponseHandler.swift */,
+				E86E7C2C4D5F1E630F0E10CC04E3C81E /* Combine.swift */,
+				4B92FAF9B7AE32780E70DE81A2E682BB /* DispatchQueue+Alamofire.swift */,
+				CC5848404356B7FF235B604961C64690 /* EventMonitor.swift */,
+				AD5BF614043ABE10E93F5A6AE21915D6 /* HTTPHeaders.swift */,
+				B4286C7290F077FC8145E45D7713606C /* HTTPMethod.swift */,
+				89AABDFF525F096394FFC04ADE062072 /* MultipartFormData.swift */,
+				0AADE3733B50DF50F0941B0C67BB4CB3 /* MultipartUpload.swift */,
+				1947B9E487DBA7E5488F07D5AFCD02B8 /* NetworkReachabilityManager.swift */,
+				C7196DB116458985366D48753F2CE1EA /* Notifications.swift */,
+				5A5A463D906D3C2E8B09E35B1CDC8A96 /* OperationQueue+Alamofire.swift */,
+				B1D3F934DFA359989CD90B9CA2738624 /* ParameterEncoder.swift */,
+				FC309737472EE32BFEBC72C3D46EACD9 /* ParameterEncoding.swift */,
+				D88223F1B38DB3ADBFDDA93ECDC6DA36 /* Protected.swift */,
+				C65F89A2A76C2CB239DF487E8785F132 /* RedirectHandler.swift */,
+				458D884503F9BFC1E5D2E6CE5B988B9A /* Request.swift */,
+				D50F846AF614560D8FA23043025768B1 /* RequestInterceptor.swift */,
+				46DBBC4F31B992446BB57CC70FA28297 /* RequestTaskMap.swift */,
+				D58D70BE0C42E0A2D9F48D6E5824D520 /* Response.swift */,
+				7A577C0F8D0DBAE0C5CEF655DC6655ED /* ResponseSerialization.swift */,
+				E9DE4E6D11B3411203B5920E72C619F2 /* Result+Alamofire.swift */,
+				B5129ADDD24FB092DC91EFC777104B79 /* RetryPolicy.swift */,
+				517F3264CD697086AE4805465616D5C7 /* ServerTrustEvaluation.swift */,
+				4414EE53E45038C56E1D18E416BA89A2 /* Session.swift */,
+				5B47AF0EEAFACF40EAFF6C724A0DB436 /* SessionDelegate.swift */,
+				30BEC6BB890D6F3AA0187AF570C234C6 /* StringEncoding+Alamofire.swift */,
+				9BD2A8E67F79CFBD2391D922E598B267 /* URLConvertible+URLRequestConvertible.swift */,
+				8AF8EC0F1D4B311BAA01FB6F6E2FB2A2 /* URLEncodedFormEncoder.swift */,
+				57585DE0977D26E91DA81CB5FD73EEEE /* URLRequest+Alamofire.swift */,
+				B3908FEB5C287C9CCA4A99969FB16AE1 /* URLSessionConfiguration+Alamofire.swift */,
+				39D3E34825305AEAA607821A4C9E4650 /* Validation.swift */,
+				58B2AB339462AD6BB1E059BD54D57B67 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		2A2DC8CDD6EBCAEDA97AA9F4B04B66B9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50CE01BFC979A64CFBFBFF7B0B3F75C8 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.modulemap */,
+				417D437EAFE88A08338DC458931A89EE /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.markdown */,
+				7DF14CC345E0DE6C2226C3A9198C1A89 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-acknowledgements.plist */,
+				29D6322E48C1311AB435202ED4E53780 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m */,
+				D75FD9E7D0E473FC63790F0F36BD93A9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-frameworks.sh */,
+				8C85B8881065D1984E40B10E15E3E53E /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-Info.plist */,
+				272F2EB4097C20198AF82DBC78974867 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h */,
+				0DE97ABBEC6D63925628D700BE7DC570 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */,
+				6B7F321B5B05CD0ED1A1EAC8703C026B /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */,
+			);
+			name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests";
+			path = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests";
+			sourceTree = "<group>";
+		};
+		2C7B0BFC8DCD7BEDD3F2BECA707CBF7A /* Pods-LemonadeBoilerplate */ = {
+			isa = PBXGroup;
+			children = (
+				69BEFD713B90B81BA7EFC52A11CC03D4 /* Pods-LemonadeBoilerplate.modulemap */,
+				D12536BD7242825FAF1AD60BAE275BD5 /* Pods-LemonadeBoilerplate-acknowledgements.markdown */,
+				FEACC5289F4E794DBBBFEDD23851124A /* Pods-LemonadeBoilerplate-acknowledgements.plist */,
+				9C9885B559D44618DA5F5D26E43681B0 /* Pods-LemonadeBoilerplate-dummy.m */,
+				5410D98DCB4173FFD4741514D8332038 /* Pods-LemonadeBoilerplate-frameworks.sh */,
+				6D9B48F60B6B5CF2163886829847056A /* Pods-LemonadeBoilerplate-Info.plist */,
+				712E6A882D46D5F7201E844C12826E99 /* Pods-LemonadeBoilerplate-umbrella.h */,
+				1D8929538AEB68CC222E67DFCEAA6C98 /* Pods-LemonadeBoilerplate.debug.xcconfig */,
+				C6E88F887EEA9AAC9736432E8765073F /* Pods-LemonadeBoilerplate.release.xcconfig */,
+			);
+			name = "Pods-LemonadeBoilerplate";
+			path = "Target Support Files/Pods-LemonadeBoilerplate";
+			sourceTree = "<group>";
+		};
+		309ED88C2B7242D2466AB62BF52B5DA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				277E332A2494C5537767EB781C0AC6DC /* Alamofire */,
+				7E6EBB153B15A9DC169AF3B24DA9BF16 /* LemonadeUI */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58B2AB339462AD6BB1E059BD54D57B67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F9A20D45D6ADF629A2323A38D9EBF56 /* Alamofire.modulemap */,
+				7E5FF986B2CF8A13D65CF5ADA6CF292B /* Alamofire-dummy.m */,
+				3F9879F95A4F7F5C8A174D32F10663DB /* Alamofire-Info.plist */,
+				D687A0BD1A95E01184B5A9C491D5F49E /* Alamofire-prefix.pch */,
+				C9D35DC835E7F8D45EF167F4E9880EC7 /* Alamofire-umbrella.h */,
+				4241B112BEFE707D64ADA9BB23E2A933 /* Alamofire.debug.xcconfig */,
+				140616D04651C0439DDD36ECA4D18DDC /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		61C8CC330A5CA84DA2F5F1D32AB07069 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */,
+				FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7E6EBB153B15A9DC169AF3B24DA9BF16 /* LemonadeUI */ = {
+			isa = PBXGroup;
+			children = (
+				B5785DCB605B1D8662542006B7384387 /* Animation+View+Extension.swift */,
+				03B39AC677F8143F7D2F71ADD08603A8 /* CGFloat+Constraint+Extensions.swift */,
+				5DE611648A3FC0464E7F706DA05418CF /* Common+View+Extensions.swift */,
+				3453A5775BFAC9659C15454CCD370E16 /* Config+Animation.swift */,
+				1C160CA8F163854134ED7C057C570455 /* Config+Lemonade+Button.swift */,
+				3F3473F5FF5E595CB0D5388AFE5BE0CE /* Config+Lemonade+Label.swift */,
+				8911E3BAFB61161734972DE6B69F266F /* ConfigUI+View.swift */,
+				8D8066DA9F5F2259467E2EC6C47BDE1E /* ConstraintErrors.swift */,
+				8741BFB44DED5A0E586D1B66DFD36666 /* Custom+Animations.swift */,
+				923B9B1DB4C65656AC06453EEFA2D738 /* Custom+Basic+Animations.swift */,
+				BAA650AA8E2557233DE1D22E92AF6186 /* Custom+View+Extensions.swift */,
+				23F0768D89B297617D6E5FE377A0704D /* Default+Lemonade+Cell.swift */,
+				0590EDEE959E5E0BFE9C7A4E345203FE /* Label+Tap+Gesture+Extensions.swift */,
+				4A69E2AE055FE416BBF5C8BD58773F56 /* Lemonade+Alert.swift */,
+				D8E743EE1A91E28E6B952DB3BD3C4667 /* Lemonade+Alert+Configs.swift */,
+				0148F5029CF2C9C5602BC072E296D270 /* Lemonade+Alert+Diolog.swift */,
+				A6A1178758C8B216078DB8545064F826 /* Lemonade+Bar+Alert.swift */,
+				2A81811810A934C4750D6A26F062D61E /* Lemonade+Cell.swift */,
+				7C61286FEB3269F865927ED5437A4354 /* Lemonade+CollectionView.swift */,
+				9E181A7F83FA74D841C4504C62CD688D /* Lemonade+CollectionView+DataSource.swift */,
+				3BBCAA876532EF7E9EAA329B1B0664A3 /* Lemonade+Flower.swift */,
+				A763D2081B44AA8DBBB539E68A59501D /* Lemonade+Flower+Config.swift */,
+				42FF9A16F409A6F3E4C1FB02DF69DB75 /* Lemonade+Labelled+Input.swift */,
+				C7354A0A25DC0065530F84D020DF9A49 /* Lemonade+Line+Chart.swift */,
+				125AEB6FBD0B3DE11634CDE77A4434B5 /* Lemonade+Line+Chart+Config.swift */,
+				7A48C36B9EC1E60A5E2DCA82D8FE95F0 /* Lemonade+Lotus.swift */,
+				6D110808DAE8A2852AFCC0D7D4674B1D /* Lemonade+Lotus+Config.swift */,
+				776F572FDAC77B743575F7BDAB22F470 /* Lemonade+Pie+Chart.swift */,
+				1B42D901CE3DC59000CECE50AA91C4BA /* Lemonade+Pie+Chart+Config.swift */,
+				B76971B014C23F3559471753C43A0A8B /* Lemonade+Progress+Chart.swift */,
+				4903FBB892192683A1AA3632853A520B /* Lemonade+Progress+Chart+Config.swift */,
+				4EB6274BAC83108D2F6D9128205841D6 /* Lemonade+ProgressBar.swift */,
+				F428E9308D5D7357D9BF855E102B5DB1 /* Lemonade+ProgressBar+Config.swift */,
+				B5056AC371804586CAB3E45E9C2F3B63 /* Lemonade+ScrollView.swift */,
+				FB1E5B31F65CB9EBC49A77EA1A92C41D /* Lemonade+SearchBar.swift */,
+				C52DDDFFB863A597984490BD3F05DFCF /* Lemonade+SearchBar+Config.swift */,
+				6679CA1CF5772337164D04894E2F1293 /* Lemonade+Segment+Config.swift */,
+				24CB3ED2DA414B3A39AF6914F85D7F22 /* Lemonade+Segment+Control.swift */,
+				FDEDD89C7776C6AD298754AB31B0E85C /* Lemonade+Segment+Control+Protocol.swift */,
+				AB752223DD181F9DA2F7F67754870363 /* Lemonade+Segment+Item.swift */,
+				56051DDA320A0F7525DCCE0D69877FAE /* Lemonade+Slider.swift */,
+				33822716592C821A21305601FE249241 /* Lemonade+Slider+Config.swift */,
+				B07ABEE931595BD754C0E968A1895AB2 /* Lemonade+ToolTip+Config.swift */,
+				8D5903BB370C6DB40BE490BE8C22187C /* Lemonade+Tooltip+View.swift */,
+				AB405B18B6BEE10AAA6BF5D0EBDE1E6D /* LemonadeButton.swift */,
+				D51BBED2B67B1EEE19EB837CB8A60048 /* LemonadeConstraint.swift */,
+				B0124F3FAC5A5869CD2FEC470F11438C /* LemonadeConstraint+View.swift */,
+				A97ACFD0AF0781327B0E2E8A4D8D9185 /* LemonadeLabel.swift */,
+				484AE41C494D33C9D2E18CE8EA02395E /* LemonadePadding.swift */,
+				215745AFEC30AD30453979905276B3F2 /* LemonadeTextfield.swift */,
+				968D3381A7A9A0E66226E1F7E3DF59D2 /* LemonadeTextView.swift */,
+				7E99D0FAA244287E24E0CA373483E2A8 /* WrapContent.swift */,
+				ECD8EB1788416AB27472E4B501DE6096 /* Support Files */,
+			);
+			path = LemonadeUI;
+			sourceTree = "<group>";
+		};
+		9C2C0A07176684E3066442DE783E9209 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C7B0BFC8DCD7BEDD3F2BECA707CBF7A /* Pods-LemonadeBoilerplate */,
+				2A2DC8CDD6EBCAEDA97AA9F4B04B66B9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */,
+				AF0429E34DDD74C7B29EB3E63A8188D4 /* Pods-LemonadeBoilerplateTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AF0429E34DDD74C7B29EB3E63A8188D4 /* Pods-LemonadeBoilerplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				E926C84B5C3AFDE145D33E3052AD58C3 /* Pods-LemonadeBoilerplateTests.modulemap */,
+				C747E5716A6941110D7838267B48DAA5 /* Pods-LemonadeBoilerplateTests-acknowledgements.markdown */,
+				7D6BE37289006AA63493AC606FB3D954 /* Pods-LemonadeBoilerplateTests-acknowledgements.plist */,
+				03387C4297CE15484B92A36AC966EDF4 /* Pods-LemonadeBoilerplateTests-dummy.m */,
+				DA9CBDD335CAC6B07DAD0D8253FA5C67 /* Pods-LemonadeBoilerplateTests-Info.plist */,
+				8DE1AA5D55B2056B5D1830883FC4B3EC /* Pods-LemonadeBoilerplateTests-umbrella.h */,
+				EF0435AF3F2BA17AF3A9F6A7C540DDA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */,
+				B1E0CD988EC4AAA8D4F5334A482912DE /* Pods-LemonadeBoilerplateTests.release.xcconfig */,
+			);
+			name = "Pods-LemonadeBoilerplateTests";
+			path = "Target Support Files/Pods-LemonadeBoilerplateTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				309ED88C2B7242D2466AB62BF52B5DA5 /* Pods */,
+				EEAB29CA511E685151223F92A5225A8C /* Products */,
+				9C2C0A07176684E3066442DE783E9209 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD8EB1788416AB27472E4B501DE6096 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA97D49265B64DC238B2A77BF1E5C1EF /* LemonadeUI.modulemap */,
+				FAC202E8871B0B1C32BD980E992BBEEF /* LemonadeUI-dummy.m */,
+				29C32C8608F3B42A931CA494FFEF2B49 /* LemonadeUI-Info.plist */,
+				DC20AF0D0B987FFE7326A3FC8DAA77D6 /* LemonadeUI-prefix.pch */,
+				8CAFC37C44D592D3A2F61DF81027AC58 /* LemonadeUI-umbrella.h */,
+				B1F24ABE4999CF740BFC4B27C2CA97F1 /* LemonadeUI.debug.xcconfig */,
+				2646B1206AFA6E5B03F02FCBA3E3907C /* LemonadeUI.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LemonadeUI";
+			sourceTree = "<group>";
+		};
+		EEAB29CA511E685151223F92A5225A8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				753B7BBBD4E19B00DF2F1AC423D6C40D /* LemonadeUI */,
+				CD12B1E508178604A0E0FB282208CB86 /* Pods-LemonadeBoilerplate */,
+				C8A33ACAF73CD2DBF5C5DD7B0B43A66C /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */,
+				BECE61B47BA2E011B4D03DCCED6B6988 /* Pods-LemonadeBoilerplateTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14FF1799C5ADBC71E1DB963F2AF8853D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B399DCF32F8FE4F09B03B6E7B65E0D1 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A26157080722C99B1F57BE8B007DCBD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03446D1A736C64A6584362E3871C9A81 /* Pods-LemonadeBoilerplate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7650F92E65E9D33BE364D6E52AAA41B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A33109CFDDD2B0B3A1D7377676A78F7 /* LemonadeUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7748ABB4890B505FFCF29DB2DA8794B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D830B5987A91060A3AD2E24ABFD3E5 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2A188AD9E617E526D9736E2887B319A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F2460910A8818A7A24D4774C511380 /* Pods-LemonadeBoilerplateTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38DD565322B75518AA0F76F93C65BDC0 /* Pods-LemonadeBoilerplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E46C6A40F1C1DC45435C6687821FB2 /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplateTests" */;
+			buildPhases = (
+				F2A188AD9E617E526D9736E2887B319A /* Headers */,
+				5F87DEA6DB5826672A744F649B5F9F93 /* Sources */,
+				1B11DF7FB0DA3133890D1244D04A7396 /* Frameworks */,
+				CE31C58C42E15058F20B4DAC44CDA6E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE908F322D732E058C624CBF40CC7A1A /* PBXTargetDependency */,
+			);
+			name = "Pods-LemonadeBoilerplateTests";
+			productName = Pods_LemonadeBoilerplateTests;
+			productReference = BECE61B47BA2E011B4D03DCCED6B6988 /* Pods-LemonadeBoilerplateTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		47FA841A180F9AFD64C4981BAFDA12D1 /* Pods-LemonadeBoilerplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A2D89F895E97984541EC8C19BB7D2D /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplate" */;
+			buildPhases = (
+				4A26157080722C99B1F57BE8B007DCBD /* Headers */,
+				52CA06661B889374C51412E6B4277582 /* Sources */,
+				D9CA15CA4A9D130C500E31F0AF70BC8D /* Frameworks */,
+				C4D1973524C0845F5AB6354DE0271B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40B9792D7FE9C2DD14424080E13F67F1 /* PBXTargetDependency */,
+				69ED12ABCD600314160A5BD8F95A01F8 /* PBXTargetDependency */,
+			);
+			name = "Pods-LemonadeBoilerplate";
+			productName = Pods_LemonadeBoilerplate;
+			productReference = CD12B1E508178604A0E0FB282208CB86 /* Pods-LemonadeBoilerplate */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8F941C36BD21460E6C270100FEB4C76 /* LemonadeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D825448851AE7F0125ED537355BBAD2 /* Build configuration list for PBXNativeTarget "LemonadeUI" */;
+			buildPhases = (
+				7650F92E65E9D33BE364D6E52AAA41B7 /* Headers */,
+				FFC4C5C980641AAAB9B786FD8B21DFAE /* Sources */,
+				75C7A2CF19EE05820A5F4F4E6173FDCA /* Frameworks */,
+				66692906CE459360134AD0ABD4B7DA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LemonadeUI;
+			productName = LemonadeUI;
+			productReference = 753B7BBBD4E19B00DF2F1AC423D6C40D /* LemonadeUI */;
+			productType = "com.apple.product-type.framework";
+		};
+		B59FFD73952A640F087BED3CF7A6EA1A /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABBD0D1C38AAC5FF32DE5E47F7CB5DC3 /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests" */;
+			buildPhases = (
+				7748ABB4890B505FFCF29DB2DA8794B0 /* Headers */,
+				DF900930DB22FA6A32AEC708853A9924 /* Sources */,
+				876530D197C1CECF980ADDCA61785600 /* Frameworks */,
+				153B5AB1FFB655726EB7D4A60B1F751D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1019858EC952B29A11AE953D59A5CA89 /* PBXTargetDependency */,
+				B2DA6521CE0C68A29C869BDDB96B30BB /* PBXTargetDependency */,
+			);
+			name = "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests";
+			productName = Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests;
+			productReference = C8A33ACAF73CD2DBF5C5DD7B0B43A66C /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				14FF1799C5ADBC71E1DB963F2AF8853D /* Headers */,
+				5FE9836A67EA3E51CA889A1AB95BC874 /* Sources */,
+				39D530C2A3085A1033683EC9AE0BC313 /* Frameworks */,
+				93ECA2D9F79614966DFA76280ABFEF67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EEAB29CA511E685151223F92A5225A8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				A8F941C36BD21460E6C270100FEB4C76 /* LemonadeUI */,
+				47FA841A180F9AFD64C4981BAFDA12D1 /* Pods-LemonadeBoilerplate */,
+				B59FFD73952A640F087BED3CF7A6EA1A /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests */,
+				38DD565322B75518AA0F76F93C65BDC0 /* Pods-LemonadeBoilerplateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153B5AB1FFB655726EB7D4A60B1F751D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66692906CE459360134AD0ABD4B7DA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ECA2D9F79614966DFA76280ABFEF67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D1973524C0845F5AB6354DE0271B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE31C58C42E15058F20B4DAC44CDA6E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CA06661B889374C51412E6B4277582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8764233A7F510ED1E6D6C1BD7FC6BD29 /* Pods-LemonadeBoilerplate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F87DEA6DB5826672A744F649B5F9F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CADC5F31F2DB587D68A042C2E2B5EBC /* Pods-LemonadeBoilerplateTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FE9836A67EA3E51CA889A1AB95BC874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A664924D6CCE2922A3F81EC932F4D476 /* AFError.swift in Sources */,
+				FEDBAD32E2EDA85AD6E362B82892A74A /* Alamofire.swift in Sources */,
+				1773084DECF68CADD45567FBEC56036D /* Alamofire-dummy.m in Sources */,
+				A3153333FC136836B0028E6AB2A56BEE /* AlamofireExtended.swift in Sources */,
+				F36D96A4346C90A2D11CB3B6A2ECF4CF /* AuthenticationInterceptor.swift in Sources */,
+				13E62623092B680C6A5C349D48B8A4FD /* CachedResponseHandler.swift in Sources */,
+				97584BC08D2B494417BDEE268CFF38C9 /* Combine.swift in Sources */,
+				DCD0C33A2B50811D53CF68F021284B47 /* DispatchQueue+Alamofire.swift in Sources */,
+				9CFDA7C92E0EEA31F709663B0E727ABA /* EventMonitor.swift in Sources */,
+				52BE6F747C26DF2A24532458E55DC10F /* HTTPHeaders.swift in Sources */,
+				02621C4B82398D0657F474E21493A3A2 /* HTTPMethod.swift in Sources */,
+				C16A047C4E8D856309A486182A490993 /* MultipartFormData.swift in Sources */,
+				30A331CD9286145E92DB11D671664C63 /* MultipartUpload.swift in Sources */,
+				B6473B8E8353317F75D6800D4F7054CB /* NetworkReachabilityManager.swift in Sources */,
+				471611F482CDC15BF464E3BA9CB83968 /* Notifications.swift in Sources */,
+				2550F0D474DE846FEC5C76CBE85F927E /* OperationQueue+Alamofire.swift in Sources */,
+				8B9CDBE3FFD712120CD66DD8B06C44E4 /* ParameterEncoder.swift in Sources */,
+				4634BA717BFCE522E5B42304C6A78B5D /* ParameterEncoding.swift in Sources */,
+				02DB462B121245593CE653B9B377F970 /* Protected.swift in Sources */,
+				DD58A00EACBEE274C381B491519C6B8C /* RedirectHandler.swift in Sources */,
+				E0C65E16219718869CD2AFCA2C5465CB /* Request.swift in Sources */,
+				F63BE0585331CAA3482EF736803F8243 /* RequestInterceptor.swift in Sources */,
+				1D17B83410DC98911D539F2BD5254C05 /* RequestTaskMap.swift in Sources */,
+				C7F66519CE6148F21D7DB11423F1D34D /* Response.swift in Sources */,
+				941822CDF68EB8F4D49F150457A82616 /* ResponseSerialization.swift in Sources */,
+				A4F1202CE5BBE79F3BBCAE3D2B16BC03 /* Result+Alamofire.swift in Sources */,
+				512FAFBD71830F126224C033B6C45F4E /* RetryPolicy.swift in Sources */,
+				8F9E1EEF2FE52E3231A769722D5C4148 /* ServerTrustEvaluation.swift in Sources */,
+				EC11B17DA78F7EEBEBC3EFAF68C6DF9F /* Session.swift in Sources */,
+				688337B18659C4BF722F87AFC4FEEF81 /* SessionDelegate.swift in Sources */,
+				E1769C267E82B0C24FE0FFBF949F0A6E /* StringEncoding+Alamofire.swift in Sources */,
+				5E594FA3290D3D70F500572D0AC100DB /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				F5D2A31C7EB1DE010771140B6E7ABAD8 /* URLEncodedFormEncoder.swift in Sources */,
+				B89D1C69742F61878115334A1D2DFFE7 /* URLRequest+Alamofire.swift in Sources */,
+				E857ADCAD7B647883D5B2AEC3F16D1D5 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				D15FEA31AA9625BBF041FB91E48A9995 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF900930DB22FA6A32AEC708853A9924 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFCC713BE039AF36A6B21CD8E2D66D9 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC4C5C980641AAAB9B786FD8B21DFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0C1C9BD4BA0A776EAAA2590D253B8D3 /* Animation+View+Extension.swift in Sources */,
+				0B2EDFE781A5D8011B8072ED2FEEC822 /* CGFloat+Constraint+Extensions.swift in Sources */,
+				7254587FB28616F30C79B0643BA71D3A /* Common+View+Extensions.swift in Sources */,
+				925A1A9CA65BC9F6E11076ACCFFB3F28 /* Config+Animation.swift in Sources */,
+				608F03227C8DA8B85FFF6B4D853CDCB3 /* Config+Lemonade+Button.swift in Sources */,
+				DD95E8B6F81720E178CE4AF6AD7991D0 /* Config+Lemonade+Label.swift in Sources */,
+				6CFFE397739405574932D874876D5CBA /* ConfigUI+View.swift in Sources */,
+				24A0624813E71EB25953CC20AB872A6C /* ConstraintErrors.swift in Sources */,
+				37A1797EA60EE2DF4800B91D19D3DFDE /* Custom+Animations.swift in Sources */,
+				65720C9FE181BBDF45648203D075FBA3 /* Custom+Basic+Animations.swift in Sources */,
+				9C29A4811780734A0B4481E54AD0C77C /* Custom+View+Extensions.swift in Sources */,
+				3097B56011C28DB8D3FF740B7CC17148 /* Default+Lemonade+Cell.swift in Sources */,
+				21C6A8017558BE3C1F97271AC2C232E6 /* Label+Tap+Gesture+Extensions.swift in Sources */,
+				5F476AED7EE60FD1D813512B0EBCE3E9 /* Lemonade+Alert.swift in Sources */,
+				7818CE28509DFCFF7F6BEDE4BACCC938 /* Lemonade+Alert+Configs.swift in Sources */,
+				5AC4CCB988CE4C36941DFD9C19A7007D /* Lemonade+Alert+Diolog.swift in Sources */,
+				1223F8821A3EC4F9DB2CFDDA3DF5456D /* Lemonade+Bar+Alert.swift in Sources */,
+				1835AFDBE6ACE216C89634A971C5038C /* Lemonade+Cell.swift in Sources */,
+				59A3DD450F28A3503244AFD530229612 /* Lemonade+CollectionView.swift in Sources */,
+				8B984154E8A5CC992BB6EAB8D001165D /* Lemonade+CollectionView+DataSource.swift in Sources */,
+				BD34B75513CAAE913BC42E3391A9D88B /* Lemonade+Flower.swift in Sources */,
+				0A0259D6D9DC66A22C79AB1857D4071C /* Lemonade+Flower+Config.swift in Sources */,
+				E4A1C0549A8EB311305B32F8E835FB63 /* Lemonade+Labelled+Input.swift in Sources */,
+				8143F6A01DE43A54571BD74E37C88B5F /* Lemonade+Line+Chart.swift in Sources */,
+				5C0B6A2A6F0BE04D2D93F8FF79FFC2A9 /* Lemonade+Line+Chart+Config.swift in Sources */,
+				E2913A317EE6B1EA0100297F3A6CEECB /* Lemonade+Lotus.swift in Sources */,
+				3B935FBC05F22B1D270583EDC4C6D64E /* Lemonade+Lotus+Config.swift in Sources */,
+				B720ED44B2E7A6D41F10C14DC96C8CB4 /* Lemonade+Pie+Chart.swift in Sources */,
+				A391506D443401B3FF8CA9D95BE857D4 /* Lemonade+Pie+Chart+Config.swift in Sources */,
+				491B25963EC509BA73630374720D3440 /* Lemonade+Progress+Chart.swift in Sources */,
+				635D3E52443677A0BC72FA0016F53DA0 /* Lemonade+Progress+Chart+Config.swift in Sources */,
+				679D35A593FDC3AC3EB2E9D760CF2EE1 /* Lemonade+ProgressBar.swift in Sources */,
+				32BB05851BA3EC7316956172578C9043 /* Lemonade+ProgressBar+Config.swift in Sources */,
+				A35D474968015E33BF4382842537C452 /* Lemonade+ScrollView.swift in Sources */,
+				403501DF0FF001F8642595A2965DDFD5 /* Lemonade+SearchBar.swift in Sources */,
+				AB90F8ED41D1208CAE40730876C878E7 /* Lemonade+SearchBar+Config.swift in Sources */,
+				C234BAAB04DF383984639A79A5F9B315 /* Lemonade+Segment+Config.swift in Sources */,
+				601D47BB5F64496011C3967EEA316BA2 /* Lemonade+Segment+Control.swift in Sources */,
+				843B9E49CD7F2E8143F68CF22D18BC24 /* Lemonade+Segment+Control+Protocol.swift in Sources */,
+				A1DD764543530FA7724E252FEE6FB92D /* Lemonade+Segment+Item.swift in Sources */,
+				F264445D1CDF1D6AE39CA7432065C99D /* Lemonade+Slider.swift in Sources */,
+				340F90C73A9ED8290C9722D40E14926A /* Lemonade+Slider+Config.swift in Sources */,
+				AC1EF979527CDDA1174A4793581DA95F /* Lemonade+ToolTip+Config.swift in Sources */,
+				AB0B4231F9040113D558760371F3F056 /* Lemonade+Tooltip+View.swift in Sources */,
+				0EC4C535A152EA14F67C63F2D7D2B66D /* LemonadeButton.swift in Sources */,
+				CE7A840DEEF380B11789161774C49541 /* LemonadeConstraint.swift in Sources */,
+				EB3243992530587E4C7CD5D1A31647F0 /* LemonadeConstraint+View.swift in Sources */,
+				F396D5BDB2DC6DEFDF47646312DB8A3B /* LemonadeLabel.swift in Sources */,
+				75DA6604710E99EFE75F3D60CB1D9B49 /* LemonadePadding.swift in Sources */,
+				F5C461442360410ECB2AF86CCA12BDC8 /* LemonadeTextfield.swift in Sources */,
+				336818EB14273D9F0183099E05D1955A /* LemonadeTextView.swift in Sources */,
+				8A0B00F751751B5F64CF477AC01C464F /* LemonadeUI-dummy.m in Sources */,
+				DE7006C2A8BD630857EFFA6F7A70D143 /* WrapContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1019858EC952B29A11AE953D59A5CA89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = A0F6774CE49A34B82175DB61ED4173DC /* PBXContainerItemProxy */;
+		};
+		40B9792D7FE9C2DD14424080E13F67F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 2EA47336E0B6DD1D2A9CCAE62890FA89 /* PBXContainerItemProxy */;
+		};
+		69ED12ABCD600314160A5BD8F95A01F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LemonadeUI;
+			target = A8F941C36BD21460E6C270100FEB4C76 /* LemonadeUI */;
+			targetProxy = 8C0EDF0B92F5F8E13BA750D42D3EDEBB /* PBXContainerItemProxy */;
+		};
+		B2DA6521CE0C68A29C869BDDB96B30BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LemonadeUI;
+			target = A8F941C36BD21460E6C270100FEB4C76 /* LemonadeUI */;
+			targetProxy = 773AE31921B44663DD288CA33AAF9DF6 /* PBXContainerItemProxy */;
+		};
+		FE908F322D732E058C624CBF40CC7A1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LemonadeBoilerplate";
+			target = 47FA841A180F9AFD64C4981BAFDA12D1 /* Pods-LemonadeBoilerplate */;
+			targetProxy = 62BE30FD27951DEFC2952E247C1D35F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1560BBE8B8F26C6929C6DFAC6021D07E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0435AF3F2BA17AF3A9F6A7C540DDA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F72D835C576E146FB94F008F1827C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7F321B5B05CD0ED1A1EAC8703C026B /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B7406C6B4D88E6EE217314B76ABA6D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2646B1206AFA6E5B03F02FCBA3E3907C /* LemonadeUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LemonadeUI/LemonadeUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LemonadeUI/LemonadeUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LemonadeUI/LemonadeUI.modulemap";
+				PRODUCT_MODULE_NAME = LemonadeUI;
+				PRODUCT_NAME = LemonadeUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5C74EF1A5172326AE29D546389FC7180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8929538AEB68CC222E67DFCEAA6C98 /* Pods-LemonadeBoilerplate.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EB25F785CC8F05C6D41CCCBAECEF1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E0CD988EC4AAA8D4F5334A482912DE /* Pods-LemonadeBoilerplateTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79FDB89F6CA57D6734D528EAF266BD7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140616D04651C0439DDD36ECA4D18DDC /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C6AA6DDE959970546DFD6644AB65AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E88F887EEA9AAC9736432E8765073F /* Pods-LemonadeBoilerplate.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A57621511580DA0E3DD23A9974A14ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F24ABE4999CF740BFC4B27C2CA97F1 /* LemonadeUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LemonadeUI/LemonadeUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LemonadeUI/LemonadeUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LemonadeUI/LemonadeUI.modulemap";
+				PRODUCT_MODULE_NAME = LemonadeUI;
+				PRODUCT_NAME = LemonadeUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDE66E9EF2650949C1F28ED6BFEEEFED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4241B112BEFE707D64ADA9BB23E2A933 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE8529F6E6CE387C2DC94CF750E27147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE97ABBEC6D63925628D700BE7DC570 /* Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests/Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D825448851AE7F0125ED537355BBAD2 /* Build configuration list for PBXNativeTarget "LemonadeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57621511580DA0E3DD23A9974A14ADA /* Debug */,
+				4B7406C6B4D88E6EE217314B76ABA6D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C98220D3187BF01A20E296DC128BED4 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE66E9EF2650949C1F28ED6BFEEEFED /* Debug */,
+				79FDB89F6CA57D6734D528EAF266BD7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E46C6A40F1C1DC45435C6687821FB2 /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1560BBE8B8F26C6929C6DFAC6021D07E /* Debug */,
+				5EB25F785CC8F05C6D41CCCBAECEF1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABBD0D1C38AAC5FF32DE5E47F7CB5DC3 /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplate-LemonadeBoilerplateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8529F6E6CE387C2DC94CF750E27147 /* Debug */,
+				1F72D835C576E146FB94F008F1827C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A2D89F895E97984541EC8C19BB7D2D /* Build configuration list for PBXNativeTarget "Pods-LemonadeBoilerplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C74EF1A5172326AE29D546389FC7180 /* Debug */,
+				8C6AA6DDE959970546DFD6644AB65AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
