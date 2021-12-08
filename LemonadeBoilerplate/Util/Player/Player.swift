@@ -49,12 +49,14 @@ class CustomPlayer: NSObject {
         assetURLs = [url]
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
+        playerConfiguration()
     }
     init( _ urls: [String]) {
         super.init()
         assetURLs = urls
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
+        playerConfiguration()
     }
     private var playerURL: URL? {
         return URL(string: assetURLs[currentPlayingItemIndex])
