@@ -20,6 +20,7 @@ protocol CustomPlayerDelegate: AnyObject {
     func didDurationChanged( _ second: Int, _ minute: Int)
     func didTotalDurationChanged( _ duration: Float64)
     func didPlayerStateChanged( _ state: AVKeyValueStatus)
+    func didFinish()
 }
 
 class CustomPlayer: NSObject {
@@ -32,6 +33,8 @@ class CustomPlayer: NSObject {
         }
     }
     
+    var isAutoPlayEnabled: Bool = true
+    var isPlaying: Bool = false
     var isLoopEnabled: Bool = false
     
     private var currentPlayingItemIndex: Int = 0
@@ -51,9 +54,10 @@ class CustomPlayer: NSObject {
         remotePlayer?.customRemotePlayerActionDelegate = self
         playerConfiguration()
     }
-    init( _ urls: [String]) {
+    init( _ urls: [String], currentIndex: Int = 0) {
         super.init()
         assetURLs = urls
+        currentPlayingItemIndex = currentIndex
         remotePlayer = .init()
         remotePlayer?.customRemotePlayerActionDelegate = self
         playerConfiguration()
@@ -89,6 +93,9 @@ extension CustomPlayer {
                 self?.customPlayerActionDelegate?.didTotalDurationChanged(CMTimeGetSeconds(self?.playerItem?.asset.duration ?? CMTime.zero))
                 self?.remotePlayer?.changePlayerData(self?.player?.currentTime().seconds ?? 0.0, self?.playerItem?.asset.duration.seconds ?? 0.0, self?.player?.rate ?? 0.0)
                 self?.customPlayerActionDelegate?.didPlayerStateChanged(status)
+                if let self = self, self.isAutoPlayEnabled {
+                    NotificationCenter.default.addObserver(self, selector: #selector(self.didEndOfTime), name: .AVPlayerItemDidPlayToEndTime, object: nil)
+                }
                 self?.timeObserver =  self?.player?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: .main, using: { cmtime in
                     let time: Float64 = CMTimeGetSeconds(cmtime)
                     let second = Int(time) % 60
@@ -100,6 +107,11 @@ extension CustomPlayer {
             }
             
         })
+    }
+    @objc private func didEndOfTime() {
+        customPlayerActionDelegate?.didFinish()
+        if assetURLs.isEmpty { return }
+        next()
     }
 }
 
@@ -120,7 +132,7 @@ extension CustomPlayer {
     func previous( _ url: String? = nil) {
         reset()
         clear()
-        currentPlayingItemIndex += 1
+        currentPlayingItemIndex -= 1
         if let url = url {
             assetURLs = [url]
             currentPlayingItemIndex = 0
@@ -131,18 +143,19 @@ extension CustomPlayer {
     
     func play() {
         self.player?.play()
+        isPlaying = true
         self.customPlayerActionDelegate?.didPlayerPlayed()
     }
     func pause() {
-        self.player?.play()
+        self.player?.pause()
+        isPlaying = false
         self.customPlayerActionDelegate?.didPlayerPaused()
     }
     func reset() {
-        self.player?.pause()
+        pause()
         self.player?.seek(to: .zero)
         self.customPlayerActionDelegate?.didDurationChanged(0, 0)
         self.customPlayerActionDelegate?.didTotalDurationChanged(0.0)
-        // NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
     }
     func slide(action: PlayerSlideAction) {
         pause()
@@ -169,8 +182,10 @@ extension CustomPlayer {
         playerItem = nil
         player = nil
         assets = nil
-        customPlayerActionDelegate = nil
+ //       customPlayerActionDelegate = nil
         timeObserver = nil
+        NotificationCenter.default.removeObserver(self, name: .AVPlayerItemDidPlayToEndTime, object: nil)
+        isPlaying = false
     }
 }
 

@@ -13,6 +13,11 @@
 		041BB38E275245160026E740 /* IAPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB38D275245160026E740 /* IAPRequest.swift */; };
 		041BB39127524E3C0026E740 /* Trackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39027524E3C0026E740 /* Trackable.swift */; };
 		041BB39327524F540026E740 /* ExampleTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041BB39227524F540026E740 /* ExampleTracker.swift */; };
+		041DEBF0276618C500A3FA40 /* CustomPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DEBEF276618C500A3FA40 /* CustomPlayerController.swift */; };
+		041DEBF42766236600A3FA40 /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DEBF32766236600A3FA40 /* Playable.swift */; };
+		041DEBF6276623D300A3FA40 /* CustomPlayerControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DEBF5276623D300A3FA40 /* CustomPlayerControllerConfig.swift */; };
+		041DEBF92766A4A200A3FA40 /* PlayerControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DEBF82766A4A200A3FA40 /* PlayerControllerUI.swift */; };
+		041DEBFE27694BD300A3FA40 /* redd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 041DEBFD27694BD300A3FA40 /* redd.mp3 */; };
 		0432ECDC274A4C1600784A40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDB274A4C1600784A40 /* AppDelegate.swift */; };
 		0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432ECDD274A4C1600784A40 /* SceneDelegate.swift */; };
 		0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0432ECE4274A4C1900784A40 /* Assets.xcassets */; };
@@ -68,6 +73,9 @@
 		0447773F274FA86B000BED78 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447773E274FA86B000BED78 /* IAPHelper.swift */; };
 		51A3AF2ACA24ABBAEF333936 /* Pods_LemonadeBoilerplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0270AF5CB43A3B631D5D9F3B /* Pods_LemonadeBoilerplateTests.framework */; };
 		DD059F7E19690302BBDA7F77 /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326A3B8F6BA713349FE9D0DD /* Pods_LemonadeBoilerplate_LemonadeBoilerplateUITests.framework */; };
+		EE9148F2276B4DD1007E0569 /* CustomPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9148F1276B4DD1007E0569 /* CustomPlayerViewModel.swift */; };
+		EE9148F5276B4DF6007E0569 /* CustomPlayerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9148F4276B4DF6007E0569 /* CustomPlayerCoordinator.swift */; };
+		EE9148F7276B7674007E0569 /* batu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE9148F6276B7674007E0569 /* batu.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +102,11 @@
 		041BB38D275245160026E740 /* IAPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPRequest.swift; sourceTree = "<group>"; };
 		041BB39027524E3C0026E740 /* Trackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackable.swift; sourceTree = "<group>"; };
 		041BB39227524F540026E740 /* ExampleTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTracker.swift; sourceTree = "<group>"; };
+		041DEBEF276618C500A3FA40 /* CustomPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerController.swift; sourceTree = "<group>"; };
+		041DEBF32766236600A3FA40 /* Playable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
+		041DEBF5276623D300A3FA40 /* CustomPlayerControllerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerControllerConfig.swift; sourceTree = "<group>"; };
+		041DEBF82766A4A200A3FA40 /* PlayerControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllerUI.swift; sourceTree = "<group>"; };
+		041DEBFD27694BD300A3FA40 /* redd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = redd.mp3; sourceTree = "<group>"; };
 		0432ECD8274A4C1600784A40 /* LemonadeBoilerplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeBoilerplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0432ECDB274A4C1600784A40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0432ECDD274A4C1600784A40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +172,9 @@
 		5F5183EB791C99FE4AD74B61 /* Pods-LemonadeBoilerplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.debug.xcconfig"; sourceTree = "<group>"; };
 		6024B84ED4C1662B8FFA1430 /* Pods_LemonadeBoilerplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LemonadeBoilerplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899C102AC7B5496D79A9F7A3 /* Pods-LemonadeBoilerplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplate.release.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplate/Pods-LemonadeBoilerplate.release.xcconfig"; sourceTree = "<group>"; };
+		EE9148F1276B4DD1007E0569 /* CustomPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerViewModel.swift; sourceTree = "<group>"; };
+		EE9148F4276B4DF6007E0569 /* CustomPlayerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerCoordinator.swift; sourceTree = "<group>"; };
+		EE9148F6276B7674007E0569 /* batu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = batu.mp3; sourceTree = "<group>"; };
 		FB8679FBBE76B5AEB61A3AA4 /* Pods-LemonadeBoilerplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LemonadeBoilerplateTests.debug.xcconfig"; path = "Target Support Files/Pods-LemonadeBoilerplateTests/Pods-LemonadeBoilerplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +226,44 @@
 				041BB39227524F540026E740 /* ExampleTracker.swift */,
 			);
 			path = Trackers;
+			sourceTree = "<group>";
+		};
+		041DEBF12766235300A3FA40 /* CustomPlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				EE9148F3276B4DED007E0569 /* Coordinator */,
+				EE9148F0276B4DB7007E0569 /* ViewModel */,
+				041DEBFC27694BBE00A3FA40 /* TempSource */,
+				041DEBF72766A47700A3FA40 /* Views */,
+				041DEBF22766235B00A3FA40 /* Models */,
+			);
+			path = CustomPlayerController;
+			sourceTree = "<group>";
+		};
+		041DEBF22766235B00A3FA40 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041DEBF32766236600A3FA40 /* Playable.swift */,
+				041DEBF5276623D300A3FA40 /* CustomPlayerControllerConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		041DEBF72766A47700A3FA40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041DEBF82766A4A200A3FA40 /* PlayerControllerUI.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		041DEBFC27694BBE00A3FA40 /* TempSource */ = {
+			isa = PBXGroup;
+			children = (
+				041DEBFD27694BD300A3FA40 /* redd.mp3 */,
+				EE9148F6276B7674007E0569 /* batu.mp3 */,
+			);
+			path = TempSource;
 			sourceTree = "<group>";
 		};
 		0432ECCF274A4C1600784A40 = {
@@ -275,6 +329,8 @@
 		0432ED0B274A4E0000784A40 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				041DEBF12766235300A3FA40 /* CustomPlayerController */,
+				041DEBEF276618C500A3FA40 /* CustomPlayerController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -532,6 +588,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EE9148F0276B4DB7007E0569 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE9148F1276B4DD1007E0569 /* CustomPlayerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE9148F3276B4DED007E0569 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EE9148F4276B4DF6007E0569 /* CustomPlayerCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -643,6 +715,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0432ECE5274A4C1900784A40 /* Assets.xcassets in Resources */,
+				041DEBFE27694BD300A3FA40 /* redd.mp3 in Resources */,
+				EE9148F7276B7674007E0569 /* batu.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,10 +885,14 @@
 				0433E906274CF3D600DAD1BB /* Downloader.swift in Sources */,
 				0432ED49274BA00800784A40 /* AppCoordinator.swift in Sources */,
 				0433E8F1274C187300DAD1BB /* Color+Extensions.swift in Sources */,
+				EE9148F2276B4DD1007E0569 /* CustomPlayerViewModel.swift in Sources */,
+				EE9148F5276B4DF6007E0569 /* CustomPlayerCoordinator.swift in Sources */,
 				0433E8FA274C1F7200DAD1BB /* StaticFile.swift in Sources */,
 				0432ECDE274A4C1600784A40 /* SceneDelegate.swift in Sources */,
+				041DEBF6276623D300A3FA40 /* CustomPlayerControllerConfig.swift in Sources */,
 				041BB39327524F540026E740 /* ExampleTracker.swift in Sources */,
 				0433E8F4274C18EE00DAD1BB /* String+Extensions.swift in Sources */,
+				041DEBF42766236600A3FA40 /* Playable.swift in Sources */,
 				0432ED1B274A527400784A40 /* UserDefaults.swift in Sources */,
 				0432ED2B274A53F700784A40 /* Request+Builder.swift in Sources */,
 				0432ED28274A53BB00784A40 /* NetworkConnection.swift in Sources */,
@@ -838,6 +916,8 @@
 				0433E8FF274C3C9000DAD1BB /* Remote+Player.swift in Sources */,
 				0432ED56274BC39C00784A40 /* ExampleViewModel.swift in Sources */,
 				0432ED2D274A540900784A40 /* Request.swift in Sources */,
+				041DEBF92766A4A200A3FA40 /* PlayerControllerUI.swift in Sources */,
+				041DEBF0276618C500A3FA40 /* CustomPlayerController.swift in Sources */,
 				0432ED3D274A55E900784A40 /* Interceptor+Response+Model.swift in Sources */,
 				0433E912274E2EFF00DAD1BB /* Notification+Center+Extensions.swift in Sources */,
 				0432ED23274A52C700784A40 /* KeychainTag.swift in Sources */,
@@ -1013,7 +1093,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W92Z84454P;
+				DEVELOPMENT_TEAM = T2FENB68MY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LemonadeBoilerplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1041,7 +1121,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W92Z84454P;
+				DEVELOPMENT_TEAM = T2FENB68MY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LemonadeBoilerplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

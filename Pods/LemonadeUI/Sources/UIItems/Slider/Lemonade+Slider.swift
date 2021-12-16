@@ -26,13 +26,13 @@ public class LemonadeSlider : UIView {
         return (config?.endValue ?? 0) - (config?.startValue ?? 0)
     }()
     private lazy var spacing : CGFloat = {
-        return bounds.width / totalDistance
+        return (bounds.width - ((config?.thumbConfig.height ?? 0.0) * 2)) / totalDistance
     }()
     private var centerY : CGFloat {
         return bounds.height / 2.0
     }
     private var centerX : CGFloat {
-        return bounds.width / 2.0
+        return (bounds.width - ((config?.thumbConfig.height ?? 0.0) * 2)) / 2.0
     }
     
     private var firstThumbValue : CGFloat = 0.0
@@ -57,10 +57,12 @@ public class LemonadeSlider : UIView {
     }()
     
     public lazy var firstThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.thumbLabelText ?? .init(text: "\(Int(firstThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
+        let text: LemonadeText = config!.thumbLabelText ?? .init(text: config!.isThumbsLabelsTrackProgress ? "\(Int(firstThumbValue))" : "",color:.black ,font : .systemFont(ofSize: 12))
+        return .init(frame: .zero, text)
     }()
     public lazy var secondThumbLabel : LemonadeLabel = {
-        return .init(frame: .zero, config!.secondLabelText ?? .init(text: "\(Int(secondThumbValue))" , color:.black ,font : .systemFont(ofSize: 12)))
+        let text: LemonadeText = config!.secondLabelText ?? .init(text: config!.isThumbsLabelsTrackProgress ? "\(Int(secondThumbValue))" : "",color:.black ,font : .systemFont(ofSize: 12))
+        return .init(frame: .zero, text)
     }()
     
     private var isDraw = false
@@ -91,12 +93,28 @@ extension LemonadeSlider {
         self.isUserInteractionEnabled = true
         self.config = config
     }
+    public func moveFirstThumb(value: CGFloat) {
+        guard let config = config else { return }
+        let condition = value > config.endValue || value < 0
+        if condition {
+            fatalError("Thumb Value need to be less than endValue")
+        }
+        moveThumb(point: convertSliderPoint(value: value), view: firstThumb)
+    }
+    public func moveSecondThumb(value: CGFloat) {
+        guard let config = config , config.secondThumbConfig != nil else { return }
+        let condition = value > config.endValue || value < 0
+        if condition {
+            fatalError("Thumb Value need to be less than endValue")
+        }
+        moveThumb(point: convertSliderPoint(value: value), view: secondThumb)
+    }
 }
 
 extension LemonadeSlider {
     private func createSlider(){
         addSubview(slider)
-        slider.frame = .init(x: 0, y: centerY - (config!.height / 2 ) , width: bounds.width, height: config!.height)
+        slider.frame = .init(x: config?.thumbConfig.height ?? 0.0, y: centerY - (config!.height / 2 ) , width: bounds.width - (config?.thumbConfig.height ?? 0.0), height: config!.height)
     }
     
     private func createFirstThumb(){
@@ -190,20 +208,38 @@ extension LemonadeSlider {
             return
         }
         let point = pin.x / spacing
-        let value = Int((self.config!.endValue / 2) + point)
-        if !distanceIsValid(view:gesture.view! ,newValue: CGFloat(value)) { return }
-        if gesture.view == self.firstThumb {
-            self.firstThumbCenterX?.constant = pin.x
+        moveThumb(point: point, view: gesture.view!)
+    }
+    
+    private func moveThumb(point: CGFloat , view: UIView) {
+        let pinX = point * spacing
+        let value = convertValue(sliderPoint: point)
+        if !distanceIsValid(view: view, newValue: CGFloat(value)) { return }
+        if view == self.firstThumb {
+            print(pinX)
+            self.firstThumbCenterX?.constant = pinX
             firstThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 0)
-            self.firstThumbLabel.text = String.init(describing: Int(value))
+            if config!.isThumbsLabelsTrackProgress {
+                self.firstThumbLabel.text = String.init(describing: Int(value))
+            }
         }
         if config!.secondThumbConfig == nil {return}
-        if gesture.view == self.secondThumb {
-            self.secondThumbCenterX?.constant = pin.x
+        if view == self.secondThumb {
+            self.secondThumbCenterX?.constant = pinX
             secondThumbValue = CGFloat.init(value)
             self.delegate?.thumbChanged(CGFloat(value), self, thumbIndex: 1)
-            self.secondThumbLabel.text = String.init(describing: Int(value))
+            if config!.isThumbsLabelsTrackProgress {
+                self.secondThumbLabel.text = String.init(describing: Int(value))
+            }
         }
     }
+    private func convertValue(sliderPoint: CGFloat) -> Int {
+        return Int((self.config!.endValue / 2) + sliderPoint)
+    }
+    private func convertSliderPoint(value: CGFloat) -> CGFloat {
+        return -1 * ((config!.endValue / 2.0) - value)
+    }
 }
+
+

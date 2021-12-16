@@ -8,6 +8,7 @@ import UIKit
 
 public protocol Coordinator: AnyObject {
     var navigationController: UINavigationController? { get set }
+    var presenterViewController: UIViewController? { get set }
     var parentCoordinator: Coordinator? { get set }
     /// Launch view controller and other elements in here
     func start(coordinator: Coordinator)
@@ -21,6 +22,12 @@ public protocol Coordinator: AnyObject {
     func pop( _ animated: Bool)
     /// Segue with view controller and custom animation
     func segue(viewController: UIViewController, _ animated: Bool, transition: UIView.AnimationOptions?)
+    /// Present
+    func present(modalPresentationStyle: UIModalPresentationStyle, viewController: UIViewController)
+    /// Add child to parent
+    func addAsChild(viewController: UIViewController, removeAll: Bool)
+    
+    func removeAllChild()
 }
 
 public class BaseCoordinator: Coordinator {
@@ -48,6 +55,7 @@ public class BaseCoordinator: Coordinator {
     
     /// Current coordinator navigation item
     public var navigationController: UINavigationController?
+    public var presenterViewController: UIViewController?
     ///
     public var parentCoordinator: Coordinator?
     var childCoordinators = [Coordinator]()
@@ -59,6 +67,7 @@ public class BaseCoordinator: Coordinator {
     public func start(coordinator: Coordinator) {
         childCoordinators += [coordinator]
         coordinator.parentCoordinator = self
+        coordinator.navigationController = navigationController
         coordinator.start()
     }
     /// Remove coordinator ( segue , dismiss , navigate back )
@@ -77,4 +86,37 @@ public class BaseCoordinator: Coordinator {
         childCoordinators.forEach { $0.removeChildCoordinators() }
         childCoordinators.removeAll()
     }
+    
+    public func present(modalPresentationStyle: UIModalPresentationStyle, viewController: UIViewController) {
+        viewController.modalPresentationStyle = modalPresentationStyle
+        parentCoordinator?.presenterViewController?.present(viewController, animated: true, completion: nil)
+    }
+    
+    public func addAsChild(viewController: UIViewController, removeAll: Bool) {
+        if removeAll {
+            let childs: [UIViewController] = parentCoordinator?.presenterViewController?.children ?? []
+            if !childs.isEmpty {
+                for child in childs {
+                    child.willMove(toParent: nil)
+                    child.view.removeFromSuperview()
+                    child.removeFromParent()
+                }
+            }
+        }
+
+        parentCoordinator?.presenterViewController?.addChild(viewController)
+        parentCoordinator?.presenterViewController?.view.addSubview(viewController.view)
+        viewController.didMove(toParent: parentCoordinator?.presenterViewController)
+    }
+    public func removeAllChild() {
+        guard let children = parentCoordinator?.presenterViewController?.children, !children.isEmpty else { return }
+        children.forEach { child in
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
+    
+    
+    
 }

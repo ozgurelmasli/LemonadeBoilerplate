@@ -7,6 +7,7 @@ target 'LemonadeBoilerplate' do
   inhibit_all_warnings!
   pod 'LemonadeUI',  :inhibit_warnings => true
   pod 'Alamofire', :inhibit_warnings => true
+  pod 'SDWebImage', :inhibit_warnings => true
 
   # Pods for LemonadeBoilerplate
   
